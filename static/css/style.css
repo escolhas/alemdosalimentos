@@ -579,7 +579,7 @@ tbody td {
   z-index: -2;
 }
 header.parallax::after {
-  background-image: url('../images/background-cover.jpg');
+  background-image: url('/static/images/background-cover.jpg');
 }
 @keyframes translate {
   to {
