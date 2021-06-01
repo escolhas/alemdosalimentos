@@ -67,7 +67,7 @@ var mapInstances = {
 
 const graph1Data = {
   labels: [
-    'Provisão de Alimentos',
+    'Provisão de alimentos',
     'Produção de água',
     'Mitigação de inundações',
     'Mitigação de calor',
@@ -78,29 +78,29 @@ const graph1Data = {
     data: [0, 0, 0, 0, 0],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(245, 132, 95, 0.2)',
+    borderColor: 'rgb(245, 132, 95)',
+    pointBackgroundColor: 'rgb(245, 132, 95)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(245, 132, 95)'
   }, {
     label: '2019',
     data: [-22.7, -16.68319427, -4.4, -5.5, -0.02684536061],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgb(54, 162, 235)',
-    pointBackgroundColor: 'rgb(54, 162, 235)',
+    backgroundColor: 'rgba(75, 95, 69, 0.2)',
+    borderColor: 'rgb(75, 95, 69)',
+    pointBackgroundColor: 'rgb(75, 95, 69)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'
+    pointHoverBorderColor: 'rgb(75, 95, 69)'
   }]
 };
 
 const graph2Data = {
   labels: [
-    'Provisão de Alimentos',
+    'Provisão de alimentos',
     'Produção de água',
     'Mitigação de inundações',
     'Mitigação de calor',
@@ -111,45 +111,45 @@ const graph2Data = {
     data: [0, 0, 0, 0, 0],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(245, 132, 95, 0.2)',
+    borderColor: 'rgb(245, 132, 95)',
+    pointBackgroundColor: 'rgb(245, 132, 95)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(245, 132, 95)'
   }, {
     label: '2019',
     data: [-22.7, -16.68319427, -4.4, -5.5, -0.02684536061],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgb(54, 162, 235)',
-    pointBackgroundColor: 'rgb(54, 162, 235)',
+    backgroundColor: 'rgba(75, 95, 69, 0.2)',
+    borderColor: 'rgb(75, 95, 69)',
+    pointBackgroundColor: 'rgb(75, 95, 69)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'
+    pointHoverBorderColor: 'rgb(75, 95, 69)'
   }, {
     label: 'BAU',
     data: [-20.83405803, -20.07071796, -5.5, -7.4, 0.4414316384],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(347, 94, 65, 0.2)',
-    borderColor: 'rgb(347, 94, 65)',
-    pointBackgroundColor: 'rgb(347, 94, 65)',
+    backgroundColor: 'rgba(184, 183, 94, 0.2)',
+    borderColor: 'rgb(184, 183, 94)',
+    pointBackgroundColor: 'rgb(184, 183, 94)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(347, 94, 65)'
+    pointHoverBorderColor: 'rgb(184, 183, 94)'
   }, {
     label: 'Cenário 1',
     data: [-19.32431192, -20.60088725, -4.8, -5.5, 0.7740484121],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(75, 81, 96, 0.2)',
-    borderColor: 'rgb(75, 81, 96)',
-    pointBackgroundColor: 'rgb(75, 81, 96)',
+    backgroundColor: 'rgba(47, 56, 70, 0.2)',
+    borderColor: 'rgb(47, 56, 70)',
+    pointBackgroundColor: 'rgb(47, 56, 70)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(75, 81, 96)'
+    pointHoverBorderColor: 'rgb(47, 56, 70)'
   }]
 };
 
