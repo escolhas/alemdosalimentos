@@ -1,36 +1,29 @@
 mapboxgl.accessToken = // eslint-disable-line
   'pk.eyJ1IjoiaW5zdGl0dXRvZXNjb2xoYXMiLCJhIjoiY2twOHQ1ZjhrMGJpcTJxbWtqb3gwZHBsNSJ9.OZWZPYM3qCOgwbpwB_SYEQ';
 
+
+
 var mapLayers = {
-  'comercializacao-eq-abastecimento': ['eq-abastecimento'],
-  'comercializacao-escola-publica': ['escola-publica'],
-  'comercializacao-hex-misto-innat': ['hex-misto-innat'],
-  'comercializacao-hex-ultra': ['hex-ultra'],
-  'agricultura-estabelecimentos-agro': ['estabelecimentos-agro'],
-  'agricultura-producao-vbp': ['producao-vbp'],
-  'agricultura-areas-ambientais': [
-    'areas-ambientais-UCI',
-    'areas-ambientais-UCS',
-    'areas-ambientais-MAN',
-    'areas-ambientais-PRO',
-    'areas-ambientais-VER',
-  ],
-  'sintese-eq-abastecimento': ['eq-abastecimento'],
-  'sintese-escola-publica': ['escola-publica'],
-  'sintese-hex-misto-innat': ['hex-misto-innat'],
-  'sintese-hex-ultra': ['hex-ultra'],
-  'sintese-estabelecimentos-agro': ['estabelecimentos-agro'],
-  'sintese-producao-vbp': ['producao-vbp'],
-  'sintese-areas-ambientais': [
-    'areas-ambientais-UCI',
-    'areas-ambientais-UCS',
-    'areas-ambientais-MAN',
-    'areas-ambientais-PRO',
-    'areas-ambientais-VER',
-  ],
-  'sintese-ipvs': ['ipvs'],
-  'sintese-uso-mapbiomas': ['uso-mapbiomas'],
-  'sintese-dens-pop': ['dens-pop'],
+  'map1-C1-AWY': ['C1-AWY'], // Produção de água
+  'map1-C1-SDR': ['C1-SDR'], // Regulação da erosão
+  'map1-C1-UFM': ['C1-UFM'], // Mitigação de inundações
+  'map1-C1-UCM': ['C1-UCM'], // Mitigação de calor
+  'map1-C1-ALI': ['C1-ALI'], // Provisão de alimentos
+  'map1-C1-USO-SOLO': ['C1-USO-SOLO'], // Outros usos do solo
+
+  'map1-BAU-AWY': ['BAU-AWY'],
+  'map1-BAU-SDR': ['BAU-SDR'],
+  'map1-BAU-UFM': ['BAU-UFM'],
+  'map1-BAU-UCM': ['BAU-UCM'],
+  'map1-BAU-ALI': ['BAU-ALI'],
+  'map1-BAU-USO-SOLO': ['BAU-USO-SOLO'],
+
+  'map2-2019-AWY': ['2019-AWY'],
+  'map2-2019-SDR': ['2019-SDR'],
+  'map2-2019-UFM': ['2019-UFM'],
+  'map2-2019-UCM': ['2019-UCM'],
+  'map2-2019-ALI': ['2019-ALI'],
+  'map2-2019-USO-SOLO': ['2019-USO-SOLO'],
 };
 
 var map1 = new mapboxgl.Map({
@@ -48,7 +41,7 @@ var map1 = new mapboxgl.Map({
 
 var map2 = new mapboxgl.Map({
   container: 'map2-map-container',
-  style: 'mapbox://styles/institutoescolhas/ckpaj4t8k056l18qe3b2bob4p', // stylesheet location
+  style: 'mapbox://styles/institutoescolhas/ckpeo67580fcx17pbetw6jwyh', // stylesheet location
   center: [-46.594710, -23.669668], // starting position [lng, lat]
   zoom: 9.5, // starting zoom
   minZoom: 8,
@@ -201,19 +194,54 @@ var graph2 = new Chart(
   }
 );
 
-
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  // adaptiveHeight: false,
-  // setGallerySize: false,
-  wrapAround: true,
-  freeScroll: false,
-  pageDots: false
+var carouselElements = document.querySelectorAll('.main-carousel');
+Array.prototype.forEach.call(carouselElements, function (el) {
+  var flkty = new Flickity(el, {
+    // options
+    cellAlign: 'left',
+    // adaptiveHeight: false,
+    // setGallerySize: false,
+    wrapAround: true,
+    freeScroll: false,
+    pageDots: false
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // SVG tooltip
+  var rmspSvg = document.querySelector('#map-rmsp-svg');
+  rmspSvg.addEventListener("load",function(){
+    var tooltip = document.querySelector('#map-rmsp-tooltip');
+    var classes = {
+      'igual': '=',
+      'menos': '↓',
+      'mais': '↑',
+    }
+    var rmspDoc = rmspSvg.contentDocument;
+    var elements = rmspDoc.querySelectorAll(".st0, .st1, .st2, .st3, .st4");
+    Array.prototype.forEach.call(elements, function (el) {
+      el.addEventListener("mousemove", function (e) {
+        tooltip.style.top = (rmspSvg.offsetTop + e.pageY - tooltip.clientHeight - 15) + 'px';
+        tooltip.style.left = (rmspSvg.offsetLeft + e.pageX - tooltip.clientWidth/2) + 'px';
+      });
+      el.addEventListener("mouseover", function (e) {
+        e.preventDefault();
+        let element = e.currentTarget;
+        let title = element.getAttribute("data-title");
+
+        tooltipTitle = tooltip.querySelector('.title');
+        tooltipTitle.innerHTML = title;
+
+        let names = ['producao-agua', 'regulacao-erosao', 'mitigacao-calor', 'mitigacao-inundacao', 'provisao-alimentos'];
+        Array.prototype.forEach.call(names, function (name) {
+          let value = element.getAttribute("data-" + name);
+          let tooltipProp = tooltip.querySelector('.' + name);
+          tooltipProp.innerHTML = classes[value];
+        });
+      });
+    });
+  }, false);
 
   // Hide Modal
   let closeButtons = document.querySelectorAll('.close-nav a');

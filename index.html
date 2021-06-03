@@ -2,12 +2,12 @@
 <html class="no-js" lang="pt">
 <head>
   <meta charset="utf-8" />
-  <title>Além dos alimentos: a contribuição da agricultura para o bem- estar na metrópole de São Paulo | Instituto Escolhas</title>
+  <title>Além dos alimentos: a contribuição da agricultura para o bem-estar na metrópole de São Paulo | Instituto Escolhas</title>
   <meta name="description" content='Entenda como a expansão da metrópole sobre áreas de florestas e agricultura impacta o bem-estar dos seus moradores e como a agricultura pode contribuir para melhorar as condições de vida na região.' />
   <meta name="viewport" content="width=1024" />
 
-  <meta property="og:title" content="Além dos alimentos: a contribuição da agricultura para o bem- estar na metrópole de São Paulo | Instituto Escolhas" />
-  <meta property="og:site_name" content="Além dos alimentos: a contribuição da agricultura para o bem- estar na metrópole de São Paulo | Instituto Escolhas" />
+  <meta property="og:title" content="Além dos alimentos: a contribuição da agricultura para o bem-estar na metrópole de São Paulo | Instituto Escolhas" />
+  <meta property="og:site_name" content="Além dos alimentos: a contribuição da agricultura para o bem-estar na metrópole de São Paulo | Instituto Escolhas" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content='Entenda como a expansão da metrópole sobre áreas de florestas e agricultura impacta o bem-estar dos seus moradores e como a agricultura pode contribuir para melhorar as condições de vida na região.' />
   <meta property="og:url" content="https://agriculturanametropole.escolhas.org" />
@@ -22,7 +22,7 @@
     name="twitter:description"
     content='Entenda como a expansão da metrópole sobre áreas de florestas e agricultura impacta o bem-estar dos seus moradores e como a agricultura pode contribuir para melhorar as condições de vida na região.'
   />
-  <meta name="twitter:title" content="Além dos alimentos: a contribuição da agricultura para o bem- estar na metrópole de São Paulo | Instituto Escolhas" />
+  <meta name="twitter:title" content="Além dos alimentos: a contribuição da agricultura para o bem-estar na metrópole de São Paulo | Instituto Escolhas" />
   <meta name="twitter:site" content="@_escolhas" />
   <meta
     name="twitter:image"
@@ -38,6 +38,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 
@@ -45,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?33250" />
+  <link rel="stylesheet" href="/static/css/style.css?2109" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -61,16 +62,15 @@
   <nav class="main-nav">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#estudo">Método</a></li>
-      <li><a href="#sintese">Hoje</a></li>
-      <li><a href="#metodologia">Amanhã</a></li>
-      <li><a href="#metodologia">Mapa</a></li>
-      <li><a href="#dados-abertos">Mapa</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#hoje">Hoje</a></li>
+      <li><a href="#amanha">Amanhã</a></li>
+      <li><a href="#sobre">Sobre</a></li>
     </ul>
   </nav>
 </div>
 
-<header class="parallax" id="home">
+<header id="home">
   <div class="background-alpha">
     <div class="content container">
       <div class="content-child">
@@ -101,21 +101,27 @@
       <div class="content-child call-to-action">
         <div class="logos">
           <div class="logo">
-            Apoio
+            <span>Apoio</span>
+            <a href="https://europa.eu/" target="_blank">
+              <img src="/static/images/logo-eu.png" alt="European Union">
+            </a>
             <a href="https://www.porticus.com/" target="_blank">
               <img src="/static/images/logo-porticus-preto.png" alt="Porticus">
             </a>
           </div>
 
           <div class="logo">
-            Parceria
-            <a href="https://www.porticus.com/" target="_blank">
-              <img src="/static/images/logo-teeb.png" alt="Porticus">
+            <span>Parceria</span>
+            <a href="http://teebweb.org/" target="_blank">
+              <img src="/static/images/logo-teeb.png" alt="TEEB">
+            </a>
+            <a href="https://www.unep.org/" target="_blank">
+              <img src="/static/images/logo-unep.png" alt="UN environment programme">
             </a>
           </div>
 
           <div class="logo">
-            Realização
+            <span>Realização</span>
             <a href="https://www.escolhas.org/" target="_blank">
               <img src="/static/images/logo-escolhas-preto.svg" alt="Instituto Escolhas">
             </a>
@@ -131,7 +137,8 @@
 </header>
   
 
-<section class="sticky-container" style='background-image: url("/static/images/background-dados.jpg")'>
+<section class="sticky-container">
+  <div class="sticky" style='background-image: url("/static/images/background-dados.jpg")'></div>
   <div class="container grid shifted">
     
 <div class="line">
@@ -141,7 +148,7 @@
         <div class="block white">
   
   
-<h2>
+<h2 class="title-blue">
 Mudança do clima aqui e agora:
 expansão urbana fez a temperatura
 média da região metropolitana de São
@@ -150,16 +157,19 @@ Paulo aumentar 1°C
 
 
   
+<div class="playfair">
 <p>
-
-Entre 1985 e 2019 a temperatura média da metrópole paulista aumentou 
-1°C, e a tendência é que se eleve mais 0,6°C até 2030. Nesse período 
+Entre 1985 e 2019 a temperatura média da metrópole paulista <strong>aumentou 
+1°C</strong>, e a tendência é que se eleve mais <strong>0,6°C</strong> até 2030. Nesse período 
 (1985- 2030) a temperatura da metrópole paulista terá ultrapassado o 
 limite máximo de 1,5°C de aumento global estabelecido pelo Acordo de 
 Paris para mitigar os efeitos das mudanças climáticas no mundo todo. 
 Na prática pode até parecer pouco, mas pesquisas mostram que, para 
 cada grau a mais na temperatura, há um aumento de mais de 1.200 mortes 
-de pessoas por causas ligadas ao coração e ao aparelho respiratório.
+de pessoas por causas ligadas ao coração e ao aparelho <span title="McMichael, A. J., et al. 2008. “International study of temperature, heat and urban mortality: the ‘ISOTHURM’ Project”. International Journal of Epidemiology, 37(5), 1121-31. doi:10.1093/ije/dyn086.">respiratório.</span>
+Para o ano de 2020, isso equivaleria a 1.200 <span title="Cálculo com base nos números do DATASUS.">mortes.</span> 1,6°C de aumento local da temperatura
+é maior que o limite máximo de aumento estabelecido pelo Acordo de Paris (1,5°C) 
+para mitigar os efeitos das mudanças climáticas globais.
 </p>
 <p>
 O que impactou diretamente o clima da metrópole paulista foi a diminuição 
@@ -170,15 +180,16 @@ para a população, como o da absorção do calor.
 </p>
 <p>
 A manutenção dessas áreas pode ajudar a frear o fenômeno do aumento de 
-temperatura, reduzindo-a em 0,2°C em relação à de 2019.
+temperatura, reduzindo-a em <strong>0,2°C</strong> em relação à de 2019.
 </p>
+</div>
 
 </div>
       
         <div class="block white">
   
   
-<h2>
+<h2 class="title-blue">
 Redução de áreas verdes diminui a
 produção de água na Bacia do Alto
 Tietê, prejudicando o abastecimento
@@ -187,26 +198,28 @@ de 4 milhões de residências por ano
 
 
   
+<div class="playfair">
 <p>
 O impacto da urbanização na Região Metropolitana de São Paulo (RMSP) 
 entre os anos de 1985 e 2019 reduziu a produção de água anual em um 
-volume de 17.000 litros por segundo. Esse resultado é ainda mais 
+volume de <strong>17.000 litros por segundo.</strong> Esse resultado é ainda mais 
 preocupante na época de estiagem, quando a água dos reservatórios 
 atende apenas 50% dos 21,6 milhões de habitantes da metrópole. 
 Para o período mais seco de 2021, que está apenas começando, 
 as perspectivas não são positivas, já que os reservatórios estão 
-com níveis muito baixos, devido à menor precipitação.
+com níveis muito baixos, devido à menor <span title="Freitas, C. “Represas da Grande São Paulo têm níveis mais baixos desde 2016”. Folha de S,Paulo, 30 abr. 2021. Disponível em: https://agora.folha.uol.com.br/sao-paulo/2021/04/represas-da-grande-sao-paulo-tem-niveis-mais-baixos-desde-2016.shtml.">precipitação.</span>
 </p>
 <p>
 A redução das áreas verdes na RMSP impacta diretamente a precipitação 
 média anual que abastece os reservatórios. Esse efeito, somado ao 
 crescimento urbano, limita a quantidade de água disponível para consumo 
 na metrópole. Se o crescimento urbano se mantiver nos moldes atuais, 
-o consumo de água aumentará mais 2.500 litros por segundo até 2030 
+o consumo de água aumentará mais <strong>2.500 litros por segundo até 2030</strong> 
 (essa diferença no aumento do consumo seria suficiente para abastecer 
-cerca de 600 mil residências por ano), agravando a disputa pela água que hoje
+cerca de <strong>600 mil residências por ano)</strong>, agravando a disputa pela água que hoje
 já faz com que a RMSP dependa de outras bacias hidrográficas.
 </p>
+</div>
 
 </div>
       
@@ -217,7 +230,7 @@ já faz com que a RMSP dependa de outras bacias hidrográficas.
         <div class="block white">
   
   
-<h2>
+<h2 class="title-blue">
 Expansão urbana reduz capacidade de
 infiltração da água no solo, provocando
 transtornos ao cotidiano da metrópole
@@ -226,17 +239,19 @@ paulista
 
 
   
+<div class="playfair">
 <p>
-A área construída da metrópole paulista aumentou 57 mil hectares entre 1985 e 2019. 
-Houve ampliação da superfície com concreto e redução da capacidade de infiltração 
-da água no solo equivalente a 17 piscinões como o de Guamiranga, ou seja, 
+A área construída da metrópole paulista <strong>aumentou 57 mil hectares</strong> entre 1985 e 2019. 
+Houve ampliação da superfície com concreto e <strong>redução da capacidade de infiltração 
+da água no solo</strong> equivalente a 17 piscinões como o de <span title="Guamiranga é o maior piscinão de controle de inundações da cidade de São Paulo, localizado na Vila Prudente, Zona Leste. Possui capacidade de armazenamento de 850 mil metros cúbicos.">Guamiranga</span>, ou seja,
 14 milhões de m3 de água. Simulação para 2030 considerando o atual ritmo de 
 expansão da área urbana da metrópole indica perda geral da capacidade de infiltração 
-de 3 milhões de m3 de água em relação a 2019, implicando a necessidade de construção 
+de <strong>3 milhões de m3 de água</strong> em relação a 2019, implicando a necessidade de construção 
 de 4 piscinões como o de Guamiranga para armazenar esse volume e evitar inundações. 
 A manutenção das áreas florestais e agrícolas possibilitaria a infiltração de cerca 
 de 2,5 milhões de m3 de água a mais, em relação aos níveis de 2019.
 </p>
+</div>
 
 </div>
       
@@ -248,15 +263,15 @@ de 2,5 milhões de m3 de água a mais, em relação aos níveis de 2019.
 
 </section>
 
-
-<section class="sticky-container" style='background-image: url("/static/images/background-2.jpg")'>
+  
+<section class="">
   <div class="container grid">
     
 <div class="line">
   
     <div class="column">
       
-        <div class="block white">
+        <div class="block ">
   
   
 <h2>
@@ -286,9 +301,11 @@ a um aumento de 57 mil hectares.
   
 
 
-
   
+<div style="text-align: center;">
 
+  <img src="/static/images/table-uso-solo2.svg" alt="Uso solo" style="width: 70%;">
+</div>
 
 </div>
       
@@ -301,7 +318,30 @@ a um aumento de 57 mil hectares.
   
     <div class="column">
       
-        <div class="block white">
+        <div class="block ">
+  
+  
+
+
+  
+<div class="text-center">	
+  
+  <img src="/static/images/image-cidade.jpg" alt="São Paulo" class="image-100" />
+
+</div>
+
+</div>
+      
+    </div>
+  
+</div>
+
+    
+<div class="line">
+  
+    <div class="column">
+      
+        <div class="block ">
   
   
 
@@ -325,7 +365,7 @@ na RMSP reduz a qualidade de vida das pessoas que moram na própria cidade e ao 
   
     <div class="column">
       
-        <div class="block white">
+        <div class="block ">
   
   
 
@@ -350,12 +390,7 @@ tais como o controle de erosão, o conforto térmico e o sequestro de carbono.
   
 </div>
 
-  </div>
 
-</section>
-  
-<section class="">
-  <div class="container grid">
     
 <div class="line">
   
@@ -372,7 +407,7 @@ manutenção de serviços ecossistêmicos na metrópole de São Paulo?
 
   
 <p>
-Os resultados obtidos no estudo <a href="https://agriculturanametropole.escolhas.org/" target="_blank">“Mais perto do que se imagina: a produção de alimentos na metrópole de São Paulo”</a>, realizado 
+Os resultados obtidos no estudo <a href="https://www.escolhas.org/wp-content/uploads/2021/01/Sum%C3%A1rio-Executivo-Mais-perto-do-que-se-imagina-a-produ%C3%A7%C3%A3o-de-alimentos-na-metr%C3%B3pole-de-S%C3%A3o-Paulo.pdf" target="_blank" class="strong-a">“Mais perto do que se imagina: a produção de alimentos na metrópole de São Paulo”</a>, realizado 
 pelo Instituto Escolhas em parceria com o Urbem, já indicavam o 
 alto potencial de provisão de alimentos da agricultura urbana 
 e periurbana da metrópole, capaz de produzir verduras e legumes de 
@@ -410,7 +445,7 @@ biofísicas e a interlocução com atores sociais-chave.
 
 <div class="gallery-widget">
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step1">
       1
     </div>
     <div class="gallery-widget-cell-content">
@@ -425,7 +460,7 @@ biofísicas e a interlocução com atores sociais-chave.
     </div>
   </div>
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step2">
       2
     </div>
     <div class="gallery-widget-cell-content">
@@ -440,7 +475,7 @@ biofísicas e a interlocução com atores sociais-chave.
     </div>
   </div>
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step3">
       3
     </div>
     <div class="gallery-widget-cell-content">
@@ -454,7 +489,7 @@ biofísicas e a interlocução com atores sociais-chave.
     </div>
   </div>
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step4">
       4
     </div>
     <div class="gallery-widget-cell-content">
@@ -467,7 +502,7 @@ biofísicas e a interlocução com atores sociais-chave.
     </div>
   </div>
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step5">
       5
     </div>
     <div class="gallery-widget-cell-content">
@@ -482,7 +517,7 @@ biofísicas e a interlocução com atores sociais-chave.
     </div>
   </div>
   <div class="gallery-widget-cell">
-    <div class="gallery-widget-cell-intro">
+    <div class="gallery-widget-cell-intro step6">
       6
     </div>
     <div class="gallery-widget-cell-content">
@@ -512,10 +547,10 @@ biofísicas e a interlocução com atores sociais-chave.
         <div class="block ">
   
   
-<h2>
+<h1 class="title-sections" id="metodo">
 Os 5 serviços ecossistêmicos
 mensurados
-</h2>
+</h1>
 
 
   
@@ -574,7 +609,7 @@ impactados pela agricultura:
   <h3>Provisão de alimentos</h3>
   <p>
     <strong>Definição:</strong> Serviço essencial para o bem-estar humano e para a segurança
-alimentar e nutricional das populações, é garantido hoje, em sua maior
+alimentar e <span title="A segurança alimentar e nutricional consiste na realização do direito de todos ao acesso regular e permanente a alimentos de qualidade, em quantidade suficiente, sem comprometer o acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde que respeitem a diversidade cultural e que sejam ambiental, cultural, econômica e socialmente sustentáveis (Lei nº 11.346, de 15 de julho de 2006).">nutricional</span> das populações, é garantido hoje, em sua maior
 parte, pelas atividades humanas de cultivo, manejo e extração de plantas,
 frutos e animais. O serviço está diretamente relacionado às condições
 socioeconômicas e culturais locais que definem o padrão de produção
@@ -582,13 +617,13 @@ e consumo. O cultivo de alimentos pode contribuir para a manutenção,
 provisão ou mesmo degradação de outros serviços ecossistêmicos.
   </p>
   <p>
-    <strong>Indicador de avaliação:</strong> área potencial de produção
+    <strong>Indicador de avaliação:</strong> Área potencial de produção
 em agropecuária, em hectares.
   </p>
   <p>
-    <strong>Modelagem utilizada:</strong> a área total de produção agropecuária é
+    <strong>Modelagem utilizada:</strong> A área total de produção agropecuária é
 empregada como um proxy (uma aproximação) para a área cultivada,
-considerando as classes de uso de solo do MapBiomas. As classes
+considerando as classes de uso de solo do <span title="É o Projeto de Mapeamento Anual da Cobertura e Uso do Solo do Brasil (MapBiomas – https://mapbiomas.org/). Por meio de sua base de dados pode-se acessar a evolução do uso da terra em diferentes escalas temporais.">MapBiomas.</span> As classes
 utilizadas foram: pastagens, cana-de-açúcar, mosaico de agricultura
 e pastagem, lavouras perenes, soja e lavouras temporárias.
   </p>
@@ -616,16 +651,13 @@ e pastagem, lavouras perenes, soja e lavouras temporárias.
     da água e reduzindo e até evitando os efeitos das inundações.
   </p>
   <p>
-    <strong>Indicador de avaliação:</strong> retenção do escoamento de
-    água superficial; a unidade utilizada foi o m3.
-    Modelagem utilizada: Urban Flood Risk Mitigation Model (Modelo de
-    Mitigação de Risco de Inundação Urbana), disponível na plataforma
-    do InVEST , que calcula a redução no escoamento superficial.
+    <strong>Indicador de avaliação:</strong> Retenção do escoamento de água 
+    superficial; a unidade utilizada foi o m3.
   </p>
   <p>
     <strong>Modelagem utilizada:</strong> Urban Flood Risk Mitigation Model (Modelo de
     Mitigação de Risco de Inundação Urbana), disponível na plataforma
-    do InVEST , que calcula a redução no escoamento superficial.
+    do <span title="Integrated Valuation of Ecosystem Services and Tradeoffs (InVEST) é um conjunto de modelos usados para mapear e avaliar os serviços ecossistêmicos, permitindo explorar como as mudanças nos ecossistemas podem levar a mudanças nos fluxos de diferentes benefícios para as pessoas. Para maiores informações: https://naturalcapitalproject.stanford.edu/software/invest">InVEST</span>, que calcula a redução no escoamento superficial.
   </p>
 
   </div>
@@ -651,12 +683,12 @@ agrícola dentro do tecido urbano também podem contribuir para um
 maior conforto térmico da comunidade em seu entorno imediato.
   </p>
   <p>
-    <strong>Indicador de avaliação:</strong> índice de mitigação de calor urbano, que
+    <strong>Indicador de avaliação:</strong> Índice de mitigação de calor urbano, que
 varia de 0 a 1 (quanto mais próximo a 1, maior a mitigação do calor).
   </p>
   <p>
     <strong>Modelagem utilizada:</strong> Urban Cooling Model (Modelo de Resfriamento
-Urbano), disponível na plataforma InVEST, que permite calcular o
+Urbano), disponível na plataforma <span title="Integrated Valuation of Ecosystem Services and Tradeoffs (InVEST) é um conjunto de modelos usados para mapear e avaliar os serviços ecossistêmicos, permitindo explorar como as mudanças nos ecossistemas podem levar a mudanças nos fluxos de diferentes benefícios para as pessoas. Para maiores informações: https://naturalcapitalproject.stanford.edu/software/invest">InVEST</span>, que permite calcular o
 índice de mitigação do calor com base em sombra, evapotranspiração
 (a evaporação da água tanto pelas plantas quanto pelo solo), albedo
 (capacidade de absorção dos raios solares) e distância de áreas verdes.
@@ -672,30 +704,36 @@ Urbano), disponível na plataforma InVEST, que permite calcular o
   </div>
   <div class="carousel-cell-column">
     
-  <h3>Provisão de alimentos</h3>
+  <h3>Produção de água</h3>
+  
   <p>
-    <strong>Definição:</strong> serviço ecossistêmico essencial para a manutenção da
-vida humana, pois relaciona-se com a disponibilidade de água voltada
-para o consumo humano. A disponibilidade de água também é fator
-condicionante para a produção de alimentos. Na RMSP, por exemplo, a
-principal atividade agrícola, a horticultura, demanda grande quantidade
-de água, devido à irrigação frequente das hortaliças. Entretanto, a
-maior parte dos estabelecimentos agrícolas da região, 70%, utiliza
-fontes de água subterrâneas em vez das fontes superficiais, como
-os reservatórios, que abastecem primordialmente as residências. A
-agricultura também pode contribuir para a provisão desse serviço.
-diretamente a qualidade da água e compromete a saúde humana.
+    <strong>Definição:</strong> serviço ecossistêmico essencial para a manutenção 
+    da vida humana, pois relaciona-se com a disponibilidade de água voltada para o 
+    consumo humano. A disponibilidade de água também é fator condicionante para a 
+    produção de alimentos. Na RMSP, por exemplo, a principal atividade agrícola, a 
+    horticultura, demanda grande quantidade de água, devido à irrigação frequente 
+    das hortaliças. Entretanto, a maior parte dos estabelecimentos agrícolas da 
+    região, <span title="Dados do Censo Agropecuário, 2017. O valor se refere à soma de fontes de água subterrânea (poços tubulares, poços convencionais e nascentes) utilizadas nos estabelecimentos dedicados à horticultura na RMSP e que possuem, ao menos, uma fonte de água.">70%</span>, utiliza fontes de água subterrâneas em vez das fontes superficiais,
+    como os reservatórios, que abastecem primordialmente as residências. 
+    A agricultura também pode contribuir para a provisão desse serviço. 
+    Nas áreas periurbanas, os estabelecimentos agrícolas cumprem a importante 
+    função de conservar a vegetação nativa, quando de acordo com a legislação 
+    ambiental vigente. As florestas são responsáveis pela devolução de água para 
+    a atmosfera, infiltração da água no solo e proteção de mananciais. 
+    Por outro lado, o uso de insumos químicos no cultivo agrícola impacta 
+    diretamente a qualidade da água e compromete a saúde humana. 
   </p>
   <p>
-    <strong>Indicador de avaliação:</strong> oferta líquida de água anual
-por m3, ou seja, a diferença entre a quantidade de água
-produzida e a utilizada dentro da unidade hidrográfica.
+    <strong>Indicador de avaliação:</strong> Oferta líquida de água anual por m3, ou seja, 
+    a diferença entre a quantidade de água produzida e a utilizada dentro 
+    da unidade hidrográfica.
   </p>
   <p>
     <strong>Modelagem utilizada:</strong> Annual Water Yield (Produção de Água Anual),
 disponível na plataforma InVEST, que simula a quantidade de água
 anualmente produzida dentro de uma determinada unidade hidrográfica.
   </p>
+
 
   </div>
 </div>
@@ -707,24 +745,23 @@ anualmente produzida dentro de uma determinada unidade hidrográfica.
   </div>
   <div class="carousel-cell-column">
     
-  <h3>Provisão de alimentos</h3>
+  <h3>Regulação de erosão</h3>
   <p>
-    <strong>Definição:</strong> Esse serviço é muito importante para a prática da agricultura,
-pois garante a qualidade e a manutenção do solo, que é a base
-para o desenvolvimento da atividade. A agricultura pode contribuir
-com ele, quando utiliza práticas de manejo mais sustentáveis que
-evitam o desenvolvimento de erosões, sulcos e ravinas no solo.
-Erosões no solo têm efeito direto sobre a fertilidade, em virtude
-do carreamento de sedimentos, inclusive para os corpos d’água,
-causando assoreamento e redução da vazão de água nos rios.
+    <strong>Definição:</strong> Esse serviço é muito importante para a prática da 
+    agricultura, pois garante a qualidade e a manutenção do solo, que é a 
+    base para o desenvolvimento da atividade. A agricultura pode contribuir com ele, 
+    quando utiliza práticas de manejo mais sustentáveis que evitam o desenvolvimento 
+    de erosões, sulcos e ravinas no solo. Erosões no solo têm efeito direto sobre 
+    a fertilidade, em virtude do carreamento de sedimentos, inclusive para os 
+    corpos d’água, causando assoreamento e redução da vazão de água nos rios.
   </p>
   <p>
-    <strong>Indicador de avaliação:</strong> retenção de sedimentos, em tonelada/ano.
+    <strong>Indicador de avaliação:</strong> Retenção de sedimentos, em tonelada/ano.
   </p>
   <p>
-    <strong>Modelagem utilizada:</strong> Sediment Retention Model (Modelo de Retenção
-de Sedimentos, disponível na plataforma InVEST, que avalia a capacidade
-da paisagem em reter sedimentos em uma bacia hidrográfica.
+    <strong>Modelagem utilizada:</strong> Sediment Retention Model (Modelo de Retenção de 
+    Sedimentos, disponível na plataforma InVEST, que avalia a capacidade da paisagem em 
+    reter sedimentos em uma bacia hidrográfica.
   </p>
 
   </div>
@@ -773,6 +810,28 @@ técnicas de manejo adotadas por ela (convencionais ou orgânicas).
   
     <div class="column">
       
+        <div class="block ">
+  
+  
+
+
+  
+  
+  <img src="/static/images/image-market.png" alt="Ilustração de Compras" class="image-100" />
+
+
+</div>
+      
+    </div>
+  
+</div>
+
+
+    
+<div class="line">
+  
+    <div class="column">
+      
         <div class="block highlight ">
   
 <h3>Sistemas produtivos convencionais</h3>
@@ -788,6 +847,14 @@ relações comerciais ao conferir-lhe maior capacidade de atender
 e a perda da fertilidade.
 </p>
 
+</div>
+      
+    </div>
+  
+    <div class="column">
+      
+        <div class="block highlight ">
+  
 <h3>Sistemas produtivos orgânicos</h3>
 <p>
 Caracterizados pela adoção de práticas mais sustentáveis de 
@@ -815,6 +882,22 @@ e a estrutura do solo.
         <div class="block ">
   
   
+
+
+  
+  
+  <img src="/static/images/image-periurbana.jpg" alt="Agricultura periurbana" class="image-100" />
+
+
+</div>
+      
+    </div>
+  
+    <div class="column">
+      
+        <div class="block ">
+  
+  
 <h2>
 Agricultura periurbana
 </h2>
@@ -831,7 +914,7 @@ em que predomina o trabalho familiar e a produção
 é voltada para a comercialização e o autoconsumo.
 Independentemente do tamanho, a agricultura
 periurbana apresenta grande potencial para fornecer
-o serviço ecossistêmico de provisão de alimentos e,
+o serviço ecossistêmico de <strong>provisão de alimentos</strong> e,
 assim, alimentar a população da RMSP. Além disso,
 a maior proximidade com as áreas florestadas e
 os corpos d’água possibilita maior interação dos
@@ -842,11 +925,11 @@ serviços ecossistêmicos.
 Se manejada de forma mais sustentável a agricultura 
 praticada nessas áreas tem grande potencial de
 prover todos os outros quatro serviços ecossistêmicos 
-avaliados – mitigação de calor, produção de água, 
-mitigação de inundações e regulação de erosão –, como veremos a 
-seguir. No sistema convencional esses serviços também são 
-fornecidos, mas a sua potencialidade é reduzida. Os serviços de produção
-e qualidade de água são impactados negativamente pelos agrotóxicos, 
+avaliados – <strong>mitigação de calor, produção de água, 
+mitigação de inundações e regulação de erosão</strong> –, como veremos a 
+seguir. <strong>No sistema convencional</strong> esses serviços também são 
+fornecidos, mas a sua potencialidade é reduzida. Os serviços de <strong>produção
+e qualidade de água</strong> são impactados negativamente pelos agrotóxicos, 
 que podem contaminar a água subterrânea e a superficial, 
 reduzindo a quantidade disponível e a qualidade desse recurso.
 </p>
@@ -854,6 +937,11 @@ reduzindo a quantidade disponível e a qualidade desse recurso.
 </div>
       
     </div>
+  
+</div>
+
+    
+<div class="line">
   
     <div class="column">
       
@@ -877,11 +965,27 @@ na mancha urbana da RMSP, essas áreas produtivas
 compõem importante papel complementar às áreas verdes 
 dentro da cidade. Ainda que sua potencialidade em fornecer 
 serviços ecossistêmicos seja inferior à
-da agricultura periurbana, a provisão de alimentos é 
+da agricultura periurbana, <strong>a provisão de alimentos</strong> é 
 essencial, principalmente em locais de vulnerabilidade social. 
-Além disso, a presença de espaços permeáveis contribui 
-para a mitigação de inundações, permitindo a infiltração da água.
+Além disso, a <strong>presença de espaços permeáveis</strong> contribui 
+para a <strong>mitigação de inundações</strong>, permitindo a infiltração da água.
 </p>
+
+</div>
+      
+    </div>
+  
+    <div class="column">
+      
+        <div class="block ">
+  
+  
+
+
+  
+  
+  <img src="/static/images/image-urbana.jpg" alt="Agricultura urbana" class="image-100" />
+
 
 </div>
       
@@ -898,6 +1002,9 @@ para a mitigação de inundações, permitindo a infiltração da água.
         <div class="block ">
   
   
+<h1 class="title-sections" id="hoje">
+Hoje
+</h1>
 <h2>
 O que aconteceu com os 5 serviços ecossistêmicos 
 analisados no período entre 1985 e 2019 na Região 
@@ -959,194 +1066,254 @@ fator de alteração dos serviços ecossistêmicos na RMSP.
         <div class="block ">
   
   
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
 
 
   
-<h3>
-Produção de água
-</h3>
-
-
-  
-<p>
-A diferença entre a quantidade de água produzida e a 
-consumida na metrópole diminuiu cerca de 25%, o que 
-representa um volume de 17m3/s por ano, equivalente à 
-demanda anual de 4 milhões de residências da RMSP. Essa 
-redução está relacionada, principalmente, às perdas de áreas de 
-vegetação natural nas partes mais periféricas das cidades da 
-região metropolitana em função da expansão urbana.
-A Bacia Hidrográfica do Alto Tietê (BHAT), uma das responsáveis 
-pelo abastecimento da RMSP, produz anualmente 141m3/s, o que seria 
-suficiente para suprir a demanda atual de 85m3/s da RMSP. No entanto,
-a qualidade da água produzida dentro da mancha urbana é 
-comprometida por diversos fatores, dentre eles a falta de saneamento básico.
-<p>
-</p>
-A redução de 17m3/s na produção de água durante o período de 1985 a 
-2019 tem maior impacto quando consideramos que no período 
-mais seco do ano a vazão da BHAT cai para 39 m3/s. 
-Esse volume atende apenas metade da demanda, configurando uma 
-situação crítica – em termos de comparação, a média de 
-disponibilidade hídrica por habitante no ano é menor do que em 
-estados do Nordeste que enfrentam longos períodos de seca. Assim, 
-se acontecer uma estiagem, como aquela do verão de 2014-15, a 
-região sofrerá novamente com a falta de água.
-</p>
-
-</div>
-      
-    </div>
-  
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
-
-
-  
-<h3>
-Regulação de erosão
-</h3>
-
-
-  
-<p>
-Apesar de esse serviço ter apresentado uma perda de menos 
-de 1% entre os anos de 1985 e 2019, vale destacar que 
-outros fatores relacionados aos processos erosivos 
-sofreram impactos maiores. Por exemplo, em patamares 
-naturais, a taxa de perda de solo é de 2,4 toneladas 
-por hectare a cada ano, enquanto para a RMSP 
-foi constatada uma redução média anual muito superior, 
-de 70 a 80 toneladas entre 1985 e 2019. Essa perda 
-gera sedimentos que são carregados para os rios, o 
-que causa aumento de sua turbidez, assoreamento e diminuição 
-da qualidade da água. Em termos de comparação, a quantidade 
-de sedimentos levada para os rios em 2019 foi 20% maior que a de 1985.
-</p>
-<p>
-O aumento da quantidade de sedimentos suspensos na água resulta 
-em gastos no seu tratamento e no desassoreamento de cursos d’água, 
-assim como na reposição dos nutrientes do solo para uso 
-da agricultura. Somente nos rios Tietê e Pinheiros foram 
-retirados 40 mil caminhões basculantes com sedimentos 
-(cada um deles podendo transportar até 13 toneladas), o que 
-custou aos cofres públicos 45 milhões de reais no ano de 2019. 
-Em relação à dragagem, procedimento realizado para o 
-desassoreamento dos rios, são calculados 29 reais por 
-tonelada retirada da água. É importante frisar que os resíduos 
-retirados no desassoreamento são de diversos tipos, incluindo 
-resíduos sólidos urbanos.
-</p>
-
-</div>
-      
-    </div>
-  
-</div>
-
-
+<div class="main-carousel">
+  <div class="carousel-cell carousel-1">
+  <div class="carousel-cell-column carousel-cell-column-image">
     
-<div class="line">
-  
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
+  <img src="/static/images/image-carousel-01.png" alt="Placeholder">
 
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Provisão de alimentos</h3>
+  <p>
+  A área disponível para produção de alimentos na RMSP <strong>reduziu-se em 
+  aproximadamente 23%</strong> no período, o equivalente a <strong>52 mil hectares</strong>. Mais 
+  de <strong>60%</strong> dessa área foi ocupada pela expansão urbana. A provisão de alimentos, 
+  entretanto, depende de outros fatores para além da área disponível, tais como 
+  sistemas produtivos, tipos de cultivo, clima e intensificação da produção (quantidade/área), 
+  entre outros. Ainda assim, para ilustrar, 1 hectare é capaz de produzir em 
+  média 400 mil pés de alface por <span title="Trani, P. E. et al. Hortaliças. Campinas: Instituto Agronômico de Campinas. Disponível em: http://www.iac.sp.gov.br/imagem_informacoestecnologicas/7.pdf.">ano.</span> Se toda essa área reduzida fosse cultivada
+  apenas com alface, seriam mais de 20 bilhões de pés por ano.
+  </p>
 
-  
-<h3>
-Mitigação de calor
-</h3>
-
-
-  
-<p>
-A RMSP perdeu 5% de sua capacidade de resfriar o 
-ambiente, e com isso houve um aumento de 1°C na 
-temperatura média da região. Estudo revela que na cidade 
-de São Paulo o acréscimo de um grau na temperatura acima 
-do limite corresponde ao aumento de 3,46% da mortalidade 
-geral das pessoas e de 3,26% da mortalidade causada por 
-acidentes cardiovasculares e problemas no aparelho respiratório. 
-Portanto, a mitigação de calor também é um assunto que 
-deve ser abordado quando se pensa em saúde pública.
-</p>
-
+  </div>
 </div>
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
+  <div class="carousel-cell carousel-2">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-02.png" alt="Placeholder">
+
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Mitigação de inundações</h3>
+  <p>
+  A mancha urbana <strong>aumentou de 149 mil hectares para pouco mais 
+  de 206 mil hectares</strong> entre 1985 e 2019, saltando de 18% para 26% 
+  de ocupação do território da RMSP. Com isso, no mesmo período, 
+  houve uma <strong>redução de 4% na capacidade de infiltração da água no solo</strong>. 
+  Considerando uma chuva forte <span title="As chuvas de 50 mm indicam eventos críticos, com maior potencial de danos na forma de enchentes. Essas chuvas têm se tornado mais frequentes, ocorrendo de duas a cinco vezes por ano, em virtude das mudanças climáticas.">(50 mm)</span>, são
+  14 milhões de m³ a mais de água em escoamento superficial (sem se 
+  infiltrar no solo), com o potencial de causar enchentes. 
+  Isso equivale a 17 piscinões como o de Guamiranga.
+  </p>
+
+  </div>
+</div>
+  <div class="carousel-cell carousel-3">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-03.png" alt="Placeholder">
+
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Mitigação de calor</h3>
+  <p>
+  A RMSP perdeu <strong>5% de sua capacidade de resfriar o ambiente</strong>, 
+  e com isso houve um <strong>aumento de 1°C na temperatura média</strong> da região. 
+  Estudo revela que na cidade de São Paulo o acréscimo de um grau 
+  na temperatura acima do limite corresponde ao aumento de 3,46% da 
+  mortalidade geral das pessoas e de 3,26% da mortalidade causada por 
+  acidentes cardiovasculares e problemas no aparelho respiratório. 
+  Portanto, a mitigação de calor também é um assunto que deve ser 
+  abordado quando se pensa em saúde pública. 
+  </p>
+
+  </div>
+</div>
+  <div class="carousel-cell carousel-4">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-04.png" alt="Placeholder">
+
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Produção de água</h3>
+  <p>
+  A diferença entre a quantidade de água produzida e a consumida na 
+  metrópole <strong>diminuiu cerca de 25%</strong>, o que representa um volume de <strong>17m³/s por ano</strong>, 
+  equivalente à demanda anual de 4 milhões de <span title="De acordo com a Sabesp (2016), uma residência normal consome 10.000 litros por mês.">residências</span> da RMSP.
+  Essa redução está relacionada, principalmente, às perdas de áreas de 
+  vegetação natural nas partes mais periféricas das cidades da região 
+  metropolitana em função da expansão urbana.<br>
+  A Bacia Hidrográfica do Alto Tietê (BHAT), uma das responsáveis pelo 
+  abastecimento da RMSP, <strong>produz anualmente 141m3/s</strong>, o que seria suficiente 
+  para suprir <strong>a demanda atual de 85m3/s da <span title="Fundação Agência da Bacia Hidrográfica do Alto Tietê (FABHAT). Relatório – I Plano de Bacia Hidrográfica do Alto Tietê – UGRHI 06 – Ano Base 2016/2035. Disponível em: http://www.sigrh.sp.gov.br/public/uploads/documents/CBH-AT/11958/relatorio-i_plano_final-rev2.pdf. Acesso em: 11 set. 2020.">RMSP</span></strong>. No entanto, <strong>a qualidade da
+  água produzida</strong> dentro da mancha urbana é comprometida por diversos fatores, 
+  dentre eles a falta de saneamento básico.<br>
+  A redução de 17m³/s na produção de água durante o período de 1985 a 2019 
+  tem maior impacto quando consideramos que no período mais seco <strong>do ano a 
+  vazão da BHAT cai para <span title="BICUDO, D. C.; et al. Provisão, Regulação da Água e Bem-Estar Humano, (176-235) in RODRIGUES, E. A.; et al. Serviços Ecossistêmicos e Bem-Estar Humano na Reserva da Biosfera do Cinturão Verde da Cidade de São Paulo. São Paulo: Instituto Florestal, 2020.">39 m3/s</span></strong>. Esse volume
+  atende apenas metade da demanda, configurando uma situação crítica – em termos 
+  de comparação, <strong>a média de disponibilidade hídrica por habitante no ano é menor 
+  do que em estados do Nordeste</strong> que enfrentam longos períodos de seca. Assim, se 
+  acontecer uma estiagem, como aquela do verão de 2014-15, a região sofrerá 
+  novamente com a falta de água. 
+  </p>
 
 
-  
-<h3>
-Mitigação de inundações
-</h3>
+  </div>
+</div>
+  <div class="carousel-cell carousel-5">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-05.png" alt="Placeholder">
 
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Regulação de erosão</h3>
+  <p>
+  Apesar de esse serviço ter apresentado uma perda de menos de 1% entre 
+  os anos de 1985 e 2019, vale destacar que outros fatores relacionados 
+  aos processos erosivos sofreram impactos maiores. Por exemplo, em patamares 
+  naturais, a taxa de perda de solo é de 2,4 toneladas por hectare a cada 
+  <span title="Silva, A. M. da; Alcarde, C.; Hitomi, C. Natural potential for erosion for brazilian territory”. Soil Erosion Studies [S.l.], no.11, 2011. DOI: 10.5772/23163.">ano</span>, enquanto para a RMSP foi constatada uma redução média anual muito
+  superior, de 70 a 80 toneladas/ha entre 1985 e 2019. Essa perda gera 
+  sedimentos que são carregados para os rios, o que causa aumento de 
+  sua turbidez, assoreamento e diminuição da qualidade da água. 
+  Em termos de comparação, a quantidade de sedimentos levada para os 
+  rios em 2019 foi 1,5% maior que a de 1985.<br>
+  O aumento da quantidade de sedimentos suspensos na água resulta em gastos 
+  no seu tratamento e no desassoreamento de cursos d’água, assim como na 
+  reposição dos nutrientes do solo para uso da agricultura. Somente nos 
+  rios Tietê e Pinheiros <strong>foram retirados 40 mil caminhões basculantes</strong> 
+  com sedimentos (cada um deles podendo transportar até 13 toneladas), 
+  o que custou aos cofres públicos 45 milhões de reais no ano de <span title="Disponível em: https://www.infraestruturameioambiente.sp.gov.br/2020/02/recorde-de-desassoreamento-do-pinheiros-evitou-que-efeitos-da-chuva-fossem-mais-graves/.">2019.</span>
+  Em relação à dragagem, procedimento realizado para o desassoreamento dos 
+  rios, são calculados 29 reais por tonelada retirada da <span title="O valor de referência foi obtido em Latawiec et al (2018) e atualizado de acordo com o Índice Nacional de Preços ao Consumidor (INPC) para março de 2021.">água.</span>
+  É importante frisar que os resíduos retirados no desassoreamento são de 
+  diversos tipos, incluindo resíduos sólidos urbanos.
+  </p>
 
-  
-<p>
-A mancha urbana aumentou de 149 mil hectares para pouco 
-mais de 206 mil hectares entre 1985 e 2019, saltando de 
-18% para 26% de ocupação do território da RMSP. Com isso, 
-no mesmo período, houve uma redução de 4% na capacidade de 
-infiltração da água no solo. Considerando uma chuva forte 
-(50 mm), são 14 milhões de m3 a mais de água em escoamento 
-superficial (sem se infiltrar no solo), com o potencial de 
-causar enchentes. Isso equivale a 17 piscinões como o 
-de Guamiranga.
-</p>
+  </div>
+</div>
+</div>
 
 </div>
       
     </div>
   
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
-
-
-  
-<h3>
-Provisão de alimentos
-</h3>
-
-
-  
-<p>
-A área disponível para produção de alimentos na RMSP reduziu-se 
-em aproximadamente 23% no período, o equivalente a 52 mil hectares. 
-Mais de 60% dessa área foi ocupada pela expansão urbana. 
-</p>
-<p>
-A provisão de alimentos, entretanto, depende de outros fatores para 
-além da área disponível, tais como sistemas produtivos, tipos 
-de cultivo, clima e intensificação da produção (quantidade/área), 
-entre outros. Ainda assim, para ilustrar, 1 hectare é capaz de 
-produzir em média 400 mil pés de alface por ano. Se toda essa 
-área reduzida fosse cultivada apenas com alface, seriam mais 
-de 20 bilhões de pés por ano.
-</p>
-
 </div>
-      
+
+  </div>
+</section>
+  
+<!-- Mapa map2 -->
+<section class="section map" id="map2">
+  <div class="controls">
+    <div class="title">
+      <p class="instructions">
+        Clique para ligar e desligar as categorias abaixo
+      </p>
     </div>
-  
-</div>
+    <div class="layer-controls">
+      <div class="clearfix">
+        <ul class="map-controls">
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-AWY"> <span class="map-toggle-icon-color"></span>2019 - Produção de água</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_prod_agua_1"></span>-267</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_2"></span>72</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_3"></span>751</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_4"></span>1431</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_5"></span>2110</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_6"></span>2789</li>
+            </ul>
+          </li>
 
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-SDR"> <span class="map-toggle-icon-color"></span>2019 - Regulação da erosão</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_reg_erosao_1"></span>0.4</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_2"></span>12.6</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_3"></span>36.9</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_4"></span>61.3</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-UFM"> <span class="map-toggle-icon-color"></span>2019 - Mitigação de inundações</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_1"></span>13.6</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_2"></span>20.0</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_3"></span>26.4</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_4"></span>32.8</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_5"></span>39.2</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-UCM"> <span class="map-toggle-icon-color"></span>2019 - Mitigação de calor</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_mit_calor_1"></span>0</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_2"></span>0.24</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_3"></span>0.49</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_4"></span>0.74</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_5"></span>0.99</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-ALI"> <span class="map-toggle-icon-color"></span>2019 - Provisão de alimentos</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_prov_alimentos_1"></span>Área agrícola</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map2-2019-USO-SOLO"> <span class="map-toggle-icon-color"></span>2019 - Outros usos do solo</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_outros_usos_1"></span>Área florestal</li>
+              <li><span class="map-toggle-icon-color bg_outros_usos_2"></span>Área urbana</li>
+              <li><span class="map-toggle-icon-color bg_outros_usos_3"></span>Outros</li>
+            </ul>
+          </li>
+
+        </ul>
+        <div class="help-button open-modal">
+          <a href="#ajuda" data-target="map2-map-definitions"><img src="/static/images/icon-help-black.svg" alt="Ajuda" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-container">
+    <div class="map-display" id="map2-map-container"></div>
+    <div class="map-definitions" id="map2-map-definitions">
+      <nav class="close-nav">
+        <a href="#close" data-target="map2-map-definitions"><img src="/static/images/icon-close.svg" alt="Fechar" /></a>
+      </nav>
+      <div class="map-definitions-content">
+        <div class="map-definitions-container sources">
+          <h1>Fontes</h1>
+
+<ul>
+  <li><span>Fonte</span> Citação <a target="_blank" href="#">link</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="">
+  <div class="container grid">
 
     
 <div class="line">
@@ -1204,8 +1371,17 @@ e florestais em urbanas.
 
   
 <div style="text-align: center;">
-
-  <img src="/static/images/map-rmsp.svg" alt="Instituto Escolhas" style="width: 70%;">
+  <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
+<div id="map-rmsp-tooltip">
+  <span class="title">Município</span>
+  <ul>
+    <li><span class="producao-agua"></span>&nbsp;Produção de água</li>
+    <li><span class="regulacao-erosao"></span>&nbsp;Regulação erosão</li>
+    <li><span class="mitigacao-calor"></span>&nbsp;Mitigação calor</li>
+    <li><span class="mitigacao-inundacao"></span>&nbsp;Mitigação inundações</li>
+    <li><span class="provisao-alimentos"></span>&nbsp;Provisão alimentos</li>
+  </ul>
+</div>
 </div>
 
 </div>
@@ -1292,8 +1468,8 @@ Premissas e cenários
       </td>
       <td>
         Considera a expansão do cultivo agrícola em áreas de alta 
-        vulnerabilidade social e baixa incidência de estabelecimentos 
-        que comercializam alimentos in natura e mistos, onde podem 
+        vulnerabilidade <span title="O Índice Paulista de Vulnerabilidade Social é “uma tipologia que classifica os municípios do Estado de São Paulo em grupos de vulnerabilidade social a partir de uma combinação entre as dimensões demográfica e socioeconômica. Considerando um conjunto de variáveis, esse indicador permite melhor identificar os fatores específicos que produzem a deterioração das condições de vida numa comunidade, auxiliando na definição de prioridades para o atendimento da população mais vulnerável”. No total são sete categorias de vulnerabilidade, indo de grau baixo até alto, diferenciando as áreas em urbanas, rurais e aglomerados subnormais (Fundação SEADE, 2013 p. 4).">social</span> e baixa incidência de estabelecimentos
+        que comercializam alimentos in natura e <span title="Os dados utilizados seguem a metodologia do Mapeamento dos Desertos Alimentares no Brasil (CAISAN, 2018) com ajuste de maior granularidade. Maiores informações estão disponíveis no Capítulo 3 de Escolhas; Urbem, (2020) ou na plataforma “Agricultura na Metrópole” disponível em https://agriculturanametropole.escolhas.org/.">mistos</span>, onde podem
         ser encontrados alimentos frescos. As áreas de expansão urbana 
         mais recentes nas periferias da metrópole são associadas a 
         maiores taxas de vulnerabilidade social e a maior carência 
@@ -1376,25 +1552,6 @@ Premissas e cenários
 
 </section>
   
-<!-- Mapa map1 -->
-<section class="section map" id="map1">
-  <div class="controls">
-    <div class="title">
-      <p class="instructions">
-        Clique para ligar e desligar as categorias abaixo
-      </p>
-    </div>
-    <div class="layer-controls">
-
-    </div>
-  </div>
-  <div class="map-container">
-    <div class="map-display" id="map1-map-container"></div>
-
-
-  </div>
-</section>
-  
 <section class="">
   <div class="container grid">
     
@@ -1405,6 +1562,9 @@ Premissas e cenários
         <div class="block ">
   
   
+<h1 class="title-sections" id="amanha">
+Amanhã
+</h1>
 <h2>
 Qual a contribuição da agricultura para a manutenção 
 e a provisão futura de serviços ecossistêmicos na metrópole?
@@ -1461,206 +1621,161 @@ e a provisão futura de serviços ecossistêmicos na metrópole?
         <div class="block ">
   
   
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
 
 
   
-<h3>
-Produção de água
-</h3>
-
-
-  
-<p>
-O crescimento urbano verificado nos dois cenários eleva significativamente 
-o consumo de água, visto que o uso residencial é hoje, e continuará a 
-ser em 2030, o principal uso de água na RMSP. No pior cenário, BAU, o 
-consumo de água aumentará em 2.500 litros por segundo em relação aos 
-números de 2019, o que corresponde ao volume necessário para abastecer 
-anualmente 600 mil residências. Esse acréscimo no consumo representa 
-6% do total de água disponível em estações do ano mais secas (39.000 l/s), 
-o que torna necessário importar mais água de outras bacias hidrográficas 
-para abastecer a RMSP. No cenário de crescimento da agricultura, observa-se 
-um aumento ainda maior do consumo de água, que corresponde à soma da expansão 
-urbana e da irrigação, uma elevação equivalente a 2.700 litros de água 
-por segundo, quantidade suficiente para abastecer 700 mil residências. 
-Assim, a oferta líquida de água é reduzida, em ambos os cenários, 
-em relação aos anos de 2019 e 1985.
-<p>
-</p>
-O impacto negativo da agricultura na provisão de água, entretanto, 
-precisa ser relativizado diante das limitações da modelagem 
-utilizada, uma vez que esta não considera as sazonalidades do 
-regime, a recarga de águas subterrâneas ou a ciclagem das chuvas 
-(após a exportação de umidade para a atmosfera). É importante 
-destacar que 70% dos estabelecimentos agrícolas da RMSP utilizam 
-fontes de água subterrânea para a produção de alimentos.
-</p>
-
-</div>
-      
-    </div>
-  
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
-
-
-  
-<h3>
-Regulação de erosão
-</h3>
-
-
-  
-<p>
-Embora no cenário BAU a regulação de erosão apresente valores 
-positivos, em relação a 2019 há um aumento em 20% de sedimentos 
-exportados, que representa 1,3 milhões de toneladas de solo a 
-mais chegando aos cursos d’água. Isso corresponde a 100 mil 
-caminhões basculantes de solo sendo depositados nos corpos 
-d’água no período de um ano. Já no cenário 1, a exportação é 
-menor na comparação com o cenário BAU. Assim, 17 mil 
-caminhões basculantes a menos de sedimentos alcançariam
-os corpos d’água anualmente, equiparando-se aos níveis 
-de 2019. Isso aconteceu devido às práticas
-mais sustentáveis dos sistemas produtivos (manejo ecológico do 
-solo, com cobertura morta e plantio direto), além do 
-posicionamento estratégico de Sistemas Agroflorestais (SAFs) em 
-Áreas de Preservação Permanente (APP), como cordões de 
-retenção de sedimentos em torno de nascentes e cursos d’água.
-</p>
-<p>
-Com base nos cenários modelados verificou-se que o incremento da área de 
-cultivo agrícola sustentável mantém a provisão de serviços ecossistêmicos 
-em patamares similares aos de 2019, exceto no que tange à produção de 
-água, que é reduzida em virtude da necessidade de irrigação da produção. 
-Comparando BAU com Cenário 1, podemos dizer que a agricultura 
-pode amenizar o impacto negativo da expansão urbana na RMSP.
-</p>
-<p>
-Entretanto, esse efeito de amenizar ou amortecer os impactos do 
-modelo de urbanização adotado só acontecerá se a agricultura 
-desenvolvida for sustentável, com práticas como o manejo 
-ecológico do solo (com cobertura morta e pouco revolvimento 
-para não diminuir sua fertilidade natural), a manutenção 
-de árvores em seu sistema produtivo, a não utilização de
-agroquímicos e o emprego de técnicas de irrigação mais eficientes.
-</p>
-
-</div>
-      
-    </div>
-  
-</div>
-
+<div class="main-carousel">
+  <div class="carousel-cell carousel-1">
+  <div class="carousel-cell-column carousel-cell-column-image">
     
-<div class="line">
-  
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
+  <img src="/static/images/image-carousel-01.png" alt="Placeholder">
 
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Provisão de alimentos</h3>
+  <p>
+  Os dois cenários consideram um aumento da área destinada à produção agrícola. 
+  Em BAU são 181 mil hectares potenciais para a produção de alimentos, o que 
+  representa um aumento de pouco mais de 2% ou 4,2 mil hectares para esse serviço 
+  em relação a 2019. Entretanto, esse aumento de área ocorreu a 
+  partir da conversão de áreas florestadas.<br>
+  Já no cenário 1, considera-se uma expansão das áreas destinadas à produção de 
+  alimentos para quase 185 mil hectares da RMSP. São 7,6 mil hectares a mais 
+  em relação a 2019 e 3,4 mil hectares a mais em relação ao Cenário BAU, ou 
+  seja, que não foram convertidos em área urbana. A expansão da área agricultável 
+  neste cenário se dá em regiões de alta vulnerabilidade social e de baixa incidência 
+  de estabelecimentos que comercializam produtos in natura e <span title="Dados do Censo Demográfico de 2010.">mistos.</span> A transição para
+  a agricultura sustentável, com a adoção de sistemas agroflorestais e da agricultura 
+  orgânica, em áreas de escassez de oferta de alimentos frescos seria capaz de 
+  <strong>abastecer localmente 13 milhões de pessoas com verduras e legumes e gerar 
+  renda para 129 mil <span title="Com base nos patamares produtivos modelados em pesquisas anteriores (Escolhas; Urbem, 2020), este potencial de abastecimento e demanda de mão de obra são alcançados com 35.784 unidades produtivas, sendo estas diferenciadas como agricultura urbana (dentro da área urbanizada) ou agricultura periurbana (fora da área urbanizada).">pessoas.</span></strong>
+  </p>
 
-  
-<h3>
-Mitigação de calor
-</h3>
-
-
-  
-<p>
-No cenário BAU, esse serviço perde 2% de sua capacidade de resfriar 
-o ambiente se comparado a 2019. Dessa forma, haverá um aumento de 0,6°C
-na temperatura média nos municípios da RMSP. No cenário 1 há uma redução 
-de 0,2°C na temperatura em relação a BAU em alguns municípios. A 
-diminuição na temperatura média está relacionada principalmente
-à implantação de sistemas agroflorestais em áreas maiores que 2 hectares.
-</p>
-
+  </div>
 </div>
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
+  <div class="carousel-cell carousel-2">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-02.png" alt="Placeholder">
 
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Mitigação de inundações</h3>
+  <p>
+  No cenário BAU, o aumento de área impermeabilizada gerada com a expansão 
+  urbana <strong>diminui em 1%</strong> a infiltração de água no solo, na comparação com os 
+  parâmetros de 2019. Esse valor corresponde, em caso de chuvas fortes (50 mm), 
+  a <strong>3 milhões de m3 de água a mais nas vias de drenagem</strong>, volume que corresponde 
+  a <strong>4 piscinões</strong> de controle de alagamentos, como o de Guamiranga.<br>
+  No cenário 1, o aumento da área de cultivo agrícola não consegue superar o 
+  impacto da expansão da área impermeável da mancha urbana, assim como acontece 
+  no cenário BAU. Se comparada a esse cenário, a ampliação da área de agricultura 
+  seria responsável por um aumento na infiltração da água correspondente ao volume 
+  de pouco menos de <strong>3 piscinões como o de Guamiranga</strong>, cerca de 2,5 milhões de m³ de água.<br>
+  Em São Paulo, chuvas com volumes inferiores já causam pontos de alagamentos na cidade, 
+  sendo que na última década foram registrados de dois a cinco dias por 
+  ano com volume acima de 50 mm na RMSP. 
+  </p>
 
-  
-<h3>
-Mitigação de inundações
-</h3>
-
-
-  
-<p>
-No cenário BAU, o aumento de área impermeabilizada 
-gerada com a expansão urbana diminui em 1% a infiltração de 
-água no solo, na comparação com os parâmetros de 2019. 
-Esse valor corresponde, em caso de chuvas fortes (50 mm), 
-a 3 milhões de m3 de água a mais nas vias de drenagem, 
-volume que corresponde a 4 piscinões de controle 
-de alagamentos, como o de Guamiranga.
-</p>
-<p>
-No cenário 1, o aumento da área de cultivo agrícola não 
-consegue superar o impacto da expansão da área impermeável 
-da mancha urbana, assim como acontece no cenário BAU. Se comparada a 
-esse cenário, a ampliação da área de agricultura seria responsável por um 
-aumento na infiltração da água correspondente ao volume de pouco menos de 3 
-piscinões como o de Guamiranga, cerca de 2,5 milhões de m3 de água.
-Em São Paulo, chuvas com volumes inferiores já causam pontos de alagamentos 
-na cidade, sendo que na última década foram registrados de dois a 
-cinco dias por ano com volume acima de 50 mm na RMSP.
-</p>
-
+  </div>
 </div>
-      
-    </div>
-  
-    <div class="column">
-      
-        <div class="block ">
-  
-  
-  <img src="/static/images/icon-land.svg" alt="land" class="title-logo" />
+  <div class="carousel-cell carousel-3">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-03.png" alt="Placeholder">
+
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Mitigação de calor</h3>
+  <p>
+  No cenário BAU, esse serviço perde 2% de sua capacidade de 
+  resfriar o ambiente se comparado a 2019. Dessa forma, haverá um <strong>aumento 
+  de 0,6°C na temperatura média</strong> nos municípios da RMSP. No cenário 1 
+  há uma <strong>redução de 0,2°C</strong> na temperatura em relação a BAU em alguns municípios. 
+  A diminuição na temperatura média está relacionada principalmente à 
+  implantação de sistemas agroflorestais em áreas maiores que 2 hectares. 
+  </p>
+
+  </div>
+</div>
+  <div class="carousel-cell carousel-4">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-04.png" alt="Placeholder">
+
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Produção de água</h3>
+  <p>
+  O crescimento urbano verificado nos dois cenários eleva significativamente o 
+  consumo de água, visto que o uso residencial é hoje, e continuará a ser em 2030, 
+  o principal uso de água na RMSP. No pior cenário, BAU, o consumo de água aumentará 
+  em 2.500 litros por segundo em relação aos números de 2019, o que corresponde ao 
+  volume necessário para abastecer anualmente 600 mil residências. Esse acréscimo 
+  no consumo representa 6% do total de água disponível em estações do ano mais secas 
+  (39.000 l/s), o que torna necessário importar mais água de outras bacias hidrográficas 
+  para abastecer a RMSP. No cenário de crescimento da agricultura, observa-se um aumento 
+  ainda maior do consumo de água, que corresponde à soma da expansão urbana e da irrigação, 
+  uma elevação equivalente a 2.700 litros de água por segundo, quantidade suficiente para 
+  abastecer 700 mil residências. Assim, a oferta líquida de água é reduzida, em ambos os 
+  cenários, em relação aos anos de 2019 e 1985.<br>
+  O impacto negativo da agricultura na provisão de água, entretanto, precisa ser 
+  relativizado diante das limitações da modelagem utilizada, uma vez que esta não 
+  considera as sazonalidades do regime, a recarga de águas subterrâneas ou a ciclagem 
+  das chuvas (após a exportação de umidade para a atmosfera). É importante destacar que 
+  70% dos estabelecimentos agrícolas da RMSP utilizam fontes de água subterrânea 
+  para a produção de <span title="Censo Agropecuário do IBGE de 2017.">alimentos.</span>
+  </p>
 
 
-  
-<h3>
-Provisão de alimentos
-</h3>
+  </div>
+</div>
+  <div class="carousel-cell carousel-5">
+  <div class="carousel-cell-column carousel-cell-column-image">
+    
+  <img src="/static/images/image-carousel-05.png" alt="Placeholder">
 
+  </div>
+  <div class="carousel-cell-column">
+    
+  <h3>Regulação de erosão</h3>
+  <p>
+  Embora no cenário BAU a regulação de erosão apresente valores 
+  positivos, em relação a 2019 há um aumento em 20% de sedimentos 
+  exportados, que representa <strong>1,2 milhões de toneladas de solo a 
+  mais chegando aos cursos d’água</strong>. Isso corresponde a 93 mil caminhões 
+  basculantes de solo sendo depositados nos corpos d'água no 
+  período de um ano.<br>
+  Já no cenário 1, a exportação é menor na comparação com o cenário BAU. 
+  Assim, <strong>83 mil caminhões basculantes</strong> a menos de sedimentos alcançariam os 
+  corpos d’água anualmente, chegando muito próximo aos níveis de 2019. 
+  Isso aconteceu devido às práticas mais sustentáveis dos sistemas 
+  produtivos (manejo ecológico do solo, com cobertura morta e plantio 
+  direto), além do posicionamento estratégico de Sistemas 
+  Agroflorestais (SAFs) em Áreas de Preservação Permanente <span title="Áreas de proteção da vegetação nativa estabelecidas pela Lei de Proteção da Vegetação Nativa (12.651 de 2012), como a vegetação ripária ao longo de rios, entre outros.">(APP)</span>,
+  como cordões de retenção de sedimentos em torno de nascentes e cursos d’água.<br>
+  Com base nos cenários modelados verificou-se que o incremento da área de 
+  cultivo agrícola sustentável mantém a provisão de serviços ecossistêmicos 
+  em patamares similares aos de 2019, exceto no que tange à produção de 
+  água, que é reduzida em virtude da necessidade de irrigação da produção. 
+  Comparando BAU com Cenário 1, podemos dizer que a agricultura 
+  pode amenizar o impacto negativo da expansão urbana na RMSP.<br>
+  Entretanto, esse efeito de amenizar ou amortecer os impactos 
+  do modelo de urbanização adotado só acontecerá se a agricultura 
+  desenvolvida for sustentável, com práticas como o manejo 
+  ecológico do solo (com cobertura morta e pouco revolvimento 
+  para não diminuir sua fertilidade natural), a manutenção 
+  de árvores em seu sistema produtivo, a não utilização de 
+  agroquímicos e o emprego de técnicas de irrigação mais eficientes. 
+  </p>
 
-  
-<p>
-Os dois cenários consideram um aumento da área destinada à 
-produção agrícola. Em BAU são 181 mil hectares potenciais 
-para a produção de alimentos, o que representa um aumento 
-de pouco mais de 2% ou 4,2 mil hectares para esse serviço em 
-relação a 2019. Entretanto, esse aumento de área ocorreu a 
-partir da conversão de áreas florestadas.
-</p>
-<p>
-Já no cenário 1, considera-se uma expansão das áreas destinadas 
-à produção de alimentos para quase 185 mil hectares da RMSP. 
-São 7,6 mil hectares a mais em relação a 2019 e 3,4 mil hectares a 
-mais em relação ao Cenário BAU, ou seja, que não foram convertidos 
-em área urbana. A expansão da área agricultável neste cenário 
-se dá em regiões de alta vulnerabilidade social e de baixa 
-incidência de estabelecimentos que comercializam produtos 
-in natura e mistos . A transição para a agricultura sustentável, 
-com a adoção de sistemas agroflorestais e da agricultura orgânica, 
-em áreas de escassez de oferta de alimentos frescos seria 
-capaz de abastecer localmente 13 milhões de pessoas com verduras 
-e legumes e gerar renda para 129 mil pessoas.
-</p>
+  </div>
+</div>
+</div>
 
 </div>
       
@@ -1672,8 +1787,8 @@ e legumes e gerar renda para 129 mil pessoas.
 
 </section>
   
-<!-- Mapa map2 -->
-<section class="section map" id="map2">
+<!-- Mapa map1 -->
+<section class="section map" id="map1">
   <div class="controls">
     <div class="title">
       <p class="instructions">
@@ -1681,17 +1796,103 @@ e legumes e gerar renda para 129 mil pessoas.
       </p>
     </div>
     <div class="layer-controls">
+      <div class="clearfix">
+        <ul class="map-controls">
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-AWY"> <span class="map-toggle-icon-color"></span>Cenário 1 - Produção de água</a>
+            <a href="#" id="map1-BAU-AWY"> <span class="map-toggle-icon-color"></span>BAU - Produção de água</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_prod_agua_1"></span>-267</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_2"></span>72</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_3"></span>751</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_4"></span>1431</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_5"></span>2110</li>
+              <li><span class="map-toggle-icon-color bg_prod_agua_6"></span>2789</li>
+            </ul>
+          </li>
 
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-SDR"> <span class="map-toggle-icon-color"></span>Cenário 1 - Regulação da erosão</a>
+            <a href="#" id="map1-BAU-SDR"> <span class="map-toggle-icon-color"></span>BAU - Regulação da erosão</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_reg_erosao_1"></span>0.4</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_2"></span>12.6</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_3"></span>36.9</li>
+              <li><span class="map-toggle-icon-color bg_reg_erosao_4"></span>61.3</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-UFM"> <span class="map-toggle-icon-color"></span>Cenário 1 - Mitigação de inundações</a>
+            <a href="#" id="map1-BAU-UFM"> <span class="map-toggle-icon-color"></span>BAU - Mitigação de inundações</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_1"></span>13.6</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_2"></span>20.0</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_3"></span>26.4</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_4"></span>32.8</li>
+              <li><span class="map-toggle-icon-color bg_mit_inundacao_5"></span>39.2</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-UCM"> <span class="map-toggle-icon-color"></span>Cenário 1 - Mitigação de calor</a>
+            <a href="#" id="map1-BAU-UCM"> <span class="map-toggle-icon-color"></span>BAU - Mitigação de calor</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_mit_calor_1"></span>0</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_2"></span>0.24</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_3"></span>0.49</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_4"></span>0.74</li>
+              <li><span class="map-toggle-icon-color bg_mit_calor_5"></span>0.99</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-ALI"> <span class="map-toggle-icon-color"></span>Cenário 1 - Provisão de alimentos</a>
+            <a href="#" id="map1-BAU-ALI"> <span class="map-toggle-icon-color"></span>BAU - Provisão de alimentos</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_prov_alimentos_1"></span>Área agrícola</li>
+              <li><span class="map-toggle-icon-color bg_prov_alimentos_2"></span>Orgânica</li>
+              <li><span class="map-toggle-icon-color bg_prov_alimentos_3"></span>Agrofloresta</li>
+            </ul>
+          </li>
+
+          <li class="map-control-toggle">
+            <a href="#" id="map1-C1-USO-SOLO"> <span class="map-toggle-icon-color"></span>Cenário 1 - Outros usos do solo</a>
+            <a href="#" id="map1-BAU-USO-SOLO"> <span class="map-toggle-icon-color"></span>BAU - Outros usos do solo</a>
+            <ul class="map-layer-legend">
+              <li><span class="map-toggle-icon-color bg_outros_usos_1"></span>Área florestal</li>
+              <li><span class="map-toggle-icon-color bg_outros_usos_2"></span>Área urbana</li>
+              <li><span class="map-toggle-icon-color bg_outros_usos_3"></span>Outros</li>
+            </ul>
+          </li>
+
+        </ul>
+        <div class="help-button open-modal">
+          <a href="#ajuda" data-target="map1-map-definitions"><img src="/static/images/icon-help-black.svg" alt="Ajuda" /></a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="map-container">
-    <div class="map-display" id="map2-map-container"></div>
+    <div class="map-display" id="map1-map-container"></div>
+    <div class="map-definitions" id="map1-map-definitions">
+      <nav class="close-nav">
+        <a href="#close" data-target="map1-map-definitions"><img src="/static/images/icon-close.svg" alt="Fechar" /></a>
+      </nav>
+      <div class="map-definitions-content">
+        <div class="map-definitions-container sources">
+          <h1>Fontes</h1>
 
-
+<ul>
+  <li><span>Fonte</span> Citação <a target="_blank" href="#">link</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
   <!-- Dados abertos -->
-<section class="section-creditos" id="dados-abertos">
+<section class="section-creditos" id="sobre">
   <div class="container two-columns">
 
       <div class="column">
@@ -1710,7 +1911,7 @@ e legumes e gerar renda para 129 mil pessoas.
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Regulação da erosão</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de calor</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de inundações</a></li>
-                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Uso do solo</a></li>
+                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Provisão de alimentos</a></li>
               </ul>
             </li>
             <li class="folder">
@@ -1720,7 +1921,7 @@ e legumes e gerar renda para 129 mil pessoas.
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Regulação da erosão</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de calor</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de inundações</a></li>
-                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Uso do solo</a></li>
+                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Provisão de alimentos</a></li>
               </ul>
             </li>
             <li class="folder">
@@ -1730,13 +1931,7 @@ e legumes e gerar renda para 129 mil pessoas.
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Regulação da erosão</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de calor</a></li>
                 <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Mitigação de inundações</a></li>
-                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Uso do solo</a></li>
-              </ul>
-            </li>
-            <li class="folder">
-              <span>Complementares</span>
-              <ul>
-                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/IPVS" target="_blank">Estabelecimentos agropecuários</a></li>
+                <li class="file"><a href="https://github.com/escolhas/dados-agricultura-na-metropole/tree/master/RMSP" target="_blank">Provisão de alimentos</a></li>
               </ul>
             </li>
           </ul>
@@ -1762,7 +1957,7 @@ e legumes e gerar renda para 129 mil pessoas.
 
         <h4>Execução Técnica</h4>
         <p>
-          Peter May e Jay Marinus Nalini Van Amstel (TEEB AgriFood)<br>
+          Peter May e Jay Marinus Nalini Van Amstel (TEEBAgriFood)<br>
           Vitória Oliveira Pereira de Souza Leão
         </p>
 
@@ -1780,7 +1975,7 @@ e legumes e gerar renda para 129 mil pessoas.
 
         <h4>ISBN</h4>
         <p>
-          XXXXXXXXXXXXXXXXXXX
+          n° 978-65-86405-20-0
         </p>
 
         <h4>Produto licenciado</h4>
@@ -1795,18 +1990,27 @@ e legumes e gerar renda para 129 mil pessoas.
 
         <div class="logos">
           <div class="logo">
-            Apoio
+            <span>Apoio</span>
+            <a href="https://europa.eu/" target="_blank">
+              <img src="/static/images/logo-eu.png" alt="European Union">
+            </a>
             <a href="https://www.porticus.com/" target="_blank">
               <img src="/static/images/logo-porticus-preto.png" alt="Porticus">
             </a>
           </div>
 
           <div class="logo">
-            Parceria
+            <span>Parceria</span>
+            <a href="http://teebweb.org/" target="_blank">
+              <img src="/static/images/logo-teeb.png" alt="TEEB">
+            </a>
+            <a href="https://www.unep.org/" target="_blank">
+              <img src="/static/images/logo-unep.png" alt="UN environment programme">
+            </a>
           </div>
 
           <div class="logo">
-            Realização
+            <span>Realização</span>
             <a href="https://www.escolhas.org/" target="_blank">
               <img src="/static/images/logo-escolhas-preto.svg" alt="Instituto Escolhas">
             </a>

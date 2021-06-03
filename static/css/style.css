@@ -94,12 +94,22 @@ textarea {
    ========================================================================== */
 
 html {
+  font-size: 0.9rem;
   /*scroll-snap-type: y proximity;*/
   font-family: 'Raleway', sans-serif;
-  color: #000;
+  font-weight: 500;
+  color: #303845;
   /*perspective: 20px;*/
 }
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+
+}
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
 }
 p {
   margin: 0.5rem 0;
@@ -124,11 +134,12 @@ section h1 {
 }
 section h2 {
   margin: 0;
-  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
 }
 section h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Common slides */
@@ -165,7 +176,7 @@ section h3 {
 #top-header {
 }
 #top-header .main-nav {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 23px;
 }
 #top-header .main-nav ul {
@@ -183,6 +194,7 @@ section h3 {
 #top-header .main-nav ul li a {
   text-decoration: none;
   color: #000;
+  font-weight: 700;
 }
 #top-header .main-nav ul li a:hover {
   color: #333;
@@ -256,6 +268,9 @@ section.full-height {
   width: 30px;
   margin-bottom: 15px;
 }
+.image-100 {
+  width: 100%;
+}
 .image-90 {
   width: 90%;
 }
@@ -294,6 +309,7 @@ h2 {
 .container.shifted .column .block {
   /*background-color: ;*/
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .container .column .block.white,
@@ -305,7 +321,7 @@ h2 {
 }
 
 .background-alpha {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.60);
 }
 .bounce {
   animation: bounce 1.2s infinite;
@@ -382,6 +398,57 @@ h2 {
   width: 70%;
 }
 
+#map-rmsp-tooltip {
+  left: -100000px;
+  text-align: left;
+  top: -100000px;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 0.8rem;
+  background-color: #fff;
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+#map-rmsp-svg:hover + #map-rmsp-tooltip {
+  display: block;
+  opacity: 1;
+}
+#map-rmsp-tooltip:before {
+  pointer-events: none;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom:-30px;
+    border: solid 15px transparent;
+    border-top-color: #FFF;
+    z-index: 1;
+}
+#map-rmsp-tooltip ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#map-rmsp-tooltip li {
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+#map-rmsp-tooltip li span {
+  width: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+
 .gallery-widget {
 
 }
@@ -396,10 +463,10 @@ h2 {
 .gallery-widget-cell-intro,
 .gallery-widget-cell-content {
   width: 100%;
-  -webkit-transition: height 0.3s ease-in-out;
-  -moz-transition: height 0.3s ease-in-out;
-  -o-transition: height 0.3s ease-in-out;
-  transition: height 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out, all 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out, all 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out, all 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, all 0.3s ease-in-out;
 }
 .gallery-widget-cell-intro {
   /*display: flex;*/
@@ -409,6 +476,26 @@ h2 {
   font-size: 3rem;
   /*line-height: 4rem;*/
   font-family: sans-serif;
+  background-size: cover;
+  background-position: center center;
+}
+.gallery-widget-cell-intro.step1 {
+  background-image: url('/static/images/background-etapa1.png');
+}
+.gallery-widget-cell-intro.step2 {
+  background-image: url('/static/images/background-etapa2.png');
+}
+.gallery-widget-cell-intro.step3 {
+  background-image: url('/static/images/background-etapa3.png');
+}
+.gallery-widget-cell-intro.step4 {
+  background-image: url('/static/images/background-etapa4.png');
+}
+.gallery-widget-cell-intro.step5 {
+  background-image: url('/static/images/background-etapa5.png');
+}
+.gallery-widget-cell-intro.step6 {
+  background-image: url('/static/images/background-etapa6.png');
 }
 .gallery-widget-cell:hover .gallery-widget-cell-intro {
   height: 0;
@@ -432,10 +519,13 @@ h2 {
 
 header {
   color: #2c3240;
+  background-image: url('/static/images/background-cover2.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 header h1 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
   color: #ff855c;
 }
 header .content {
@@ -453,7 +543,7 @@ header .content-child {
    align-self: center;
    display: flex;
    flex-direction: column;
-   /*font-size: 1.1rem;*/
+   font-size: 1.2rem;
 }
 header .content-child:first-child {
   margin-right: 3rem;
@@ -470,11 +560,23 @@ header .call-to-action .logos,
   /*gap: 3rem;*/
   justify-content: center;
 }
+.logos .logo span {
+  display: block;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.logos .logo a {
+  display: inline-block;
+}
+.logos .logo a + a {
+  margin-left: 10px;
+}
 header .call-to-action .logo,
 .section-creditos .logo {
   padding: 0 1.5rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 header .call-to-action .logos img,
 .section-creditos .logos img {
@@ -503,12 +605,12 @@ table {
   font-size: 0.8rem;
 }
 thead {
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #303845;
   text-align: left;
   font-weight: bold;
 }
 tbody tr {
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #303845;
 }
 tbody td {
   padding: 10px 10px 10px 0;
@@ -522,12 +624,12 @@ tbody td {
 .sticky-container {
   /*overflow: hidden;*/
     /*z-index: -1;*/
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 /*  top: 0;
   width: 100%;
   height: 100vh;*/
-  background-size: cover;
-  background-position: center center;
+  /*background-size: cover;*/
+  /*background-position: center center;*/
 }
 .sticky {
   z-index: -1;
@@ -558,7 +660,7 @@ tbody td {
   height: min-content;
 }*/
 
-.parallax {
+/*.parallax {
   position: relative;
   overflow: hidden;
 }
@@ -574,19 +676,15 @@ tbody td {
   animation: translate 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
-  background-size: cover;
-  background-position: center center;
   z-index: -2;
-}
-header.parallax::after {
-  background-image: url('/static/images/background-cover.jpg');
-}
-@keyframes translate {
+}*/
+
+/*@keyframes translate {
   to {
     transform: translateY(-15%) scale(1.4);
   }
-}
-
+}*/
+/*
 .parallax-box {
   transform: translateY(0px);
   animation: translate-box 1s linear infinite;
@@ -597,7 +695,7 @@ header.parallax::after {
   to {
     transform: translateY(150px);
   }
-}
+}*/
 
 /* mapbox */
 .mapboxgl-ctrl-top-right {
@@ -653,8 +751,7 @@ header.parallax::after {
 .section.map .map-definitions {
   /*font-weight: 400; /* regular */*/
   width: 100%;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
   display: none;
   position: relative;
   top: -100%;
@@ -662,6 +759,7 @@ header.parallax::after {
   z-index: 9;
 }
 .section.map .map-definitions-content {
+  color: #111;
   max-width: 800px;
   height: 100%;
   margin: 0 auto;
@@ -680,17 +778,17 @@ header.parallax::after {
   padding: 0;
 }
 .section.map .map-definitions-container.sources ul {
-  color: #7b7d82;
+  color: #111;
 }
 .section.map .map-definitions-container.sources li {
   margin: 0.2rem 0 0;
 }
 .section.map .map-definitions-container.sources a {
-  color: #7b7d82;
+  color: #111;
   text-decoration: none;
 }
 .section.map .map-definitions-container.sources span {
-  color: #fff;
+  color: #111;
 }
 .section.map .map-definitions .close-nav {
   margin: 5rem 3rem 0 0;
@@ -751,6 +849,9 @@ header.parallax::after {
   float: left;
   margin-bottom: 1rem;
 }
+.section.map .map-controls .map-control-toggle a {
+  display: block;
+}
 .section.map .map-layer-legend {
   display: flex;
   flex-direction: column;
@@ -769,6 +870,7 @@ header.parallax::after {
   margin-right: 0.5rem;
   line-height: 2rem;
   border-radius: 2px;
+  border: 1px solid #111;
 }
 
 .section.map .map-controls .active .map-toggle-icon-color::after {
@@ -803,108 +905,86 @@ header.parallax::after {
   border-radius: 1px;
   border: 1px solid #777;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_restaurante_popular {
-  background-color: #9d0202;
+
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_1 {
+  background-color: #738085;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_feiras {
-  background-color: #ff0000;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_2 {
+  background-color: #c2d9eb;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_banco_alimentos {
-  background-color: #ff8a8a;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_3 {
+  background-color: #94bacf;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_cozinha_comunitaria {
-  background-color: #bdfef9;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_4 {
+  background-color: #618c99;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_mercado_municipal {
-  background-color: #0afffb;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_5 {
+  background-color: #386169;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_sacolao {
-  background-color: #00423f;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_6 {
+  background-color: #214045;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_escolas {
-  background-color: #8a8a8a;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_inundacao_1 {
+  background-color: #c7edeb;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_agropecuarios {
-  background-color: #fff;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_inundacao_2 {
+  background-color: #8cccc7;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_integral {
-  background-color: #0b3c1c;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_inundacao_3 {
+  background-color: #45b8a3;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_sustentavel {
-  background-color: #245631;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_inundacao_4 {
+  background-color: #338f7d;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_mananciais {
-  background-color: #376744;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_inundacao_5 {
+  background-color: #004a3d;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_ambiental {
-  background-color: #245631;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_calor_1 {
+  background-color: #ecffe6;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_agricultura_verde {
-  background-color: #6b9e77;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_calor_2 {
+  background-color: #c5edab;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_baixissima {
-  background-color: #313328;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_calor_3 {
+  background-color: #61e20e;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_muito_baixa {
-  background-color: #454832;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_calor_4 {
+  background-color: #26b50d;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_baixa {
-  background-color: #767c4b;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_mit_calor_5 {
+  background-color: #006b05;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_media {
-  background-color: #bcc66f;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_reg_erosao_1 {
+  background-color: #fcebc2;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_alta {
-  background-color: #a3ac12;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_reg_erosao_2 {
+  background-color: #f0c273;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_muito_alta {
-  background-color: #cfe40f;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_reg_erosao_3 {
+  background-color: #c48a2b;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_formacao_florestal {
-  background-color: #1d3131;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_reg_erosao_4 {
+  background-color: #875208;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_floresta_plantada {
-  background-color: #214a43;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prov_alimentos_1 {
+  background-color: #b1c057;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_pastagem {
-  background-color: #b1c921;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prov_alimentos_2 {
+  background-color: #82901a;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_cultura_semi_perene {
-  background-color: #79f514;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_prov_alimentos_3 {
+  background-color: #445900;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_mosaico_agri {
-  background-color: #288802;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_outros_usos_1 {
+  background-color: #264a42;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_infraestrutura_urb {
-  background-color: #5f5f5d;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_outros_usos_2 {
+  background-color: #968a8a;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_outra_area_nao_veg {
-  background-color: #bd8d77;
+.section.map .map-layer-legend .map-toggle-icon-color.bg_outros_usos_3 {
+  background-color: #bda68a;
 }
-.section.map .map-layer-legend .map-toggle-icon-color.bg_afloramento_rochoso {
-  background-color: #8e6955;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_mineracao {
-  background-color: #573929;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_menor_50 {
-  background-color: #492e32;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_50_100 {
-  background-color: #8a4751;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_100_150 {
-  background-color: #f56f83;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_150_200 {
-  background-color: #f03a54;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_200_250 {
-  background-color: #ee1e23;
-}
-.section.map .map-layer-legend .map-toggle-icon-color.bg_maior_250 {
-  background-color: #9b1a1f;
-}
+
 
 
 
@@ -976,7 +1056,7 @@ header.parallax::after {
 .section.map .map-controls a:hover,
 .section.map .map-controls a:active {
   text-decoration: none;
-  color: #fff;
+  color: #111;
 }
 .section.map .map-control-toggle.no-margin {
   margin: 0;
@@ -1075,6 +1155,20 @@ header.parallax::after {
   display: none;
 }
 
+/*span[title]:hover::after {
+  content: attr(title);
+  width: 30%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 99999999;
+  /*left: 0;*/
+}*/
+span[title] {
+  text-decoration: underline;
+  cursor: help;
+}
 
 
 /* ==========================================================================
@@ -1249,4 +1343,28 @@ header.parallax::after {
   h3 {
     page-break-after: avoid;
   }
+}
+
+
+
+.title-blue {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #303845;
+  font-size: 1.5rem;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+  color: #303845;
+  font-size: 1rem;
+}
+
+.strong-a {
+  font-weight: 700;
+}
+
+.title-sections {
+  color: #f46d4f;
+  font-size: 2.7rem;
 }
