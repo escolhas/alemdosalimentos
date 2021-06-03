@@ -1155,16 +1155,7 @@ tbody td {
   display: none;
 }
 
-/*span[title]:hover::after {
-  content: attr(title);
-  width: 30%;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.65);
-  padding: 10px;
-  border-radius: 10px;
-  z-index: 99999999;
-  /*left: 0;*/
-}*/
+
 span[title] {
   text-decoration: underline;
   cursor: help;
