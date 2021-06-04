@@ -354,6 +354,14 @@ h2 {
   color: #fff;
   /*height: 100%;*/
 }
+.main-carousel strong {
+  font-size: 1.1rem;
+}
+.main-carousel h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-top: 0;
+}
 .carousel-1 {
   background-color: #b7b466;
 }
@@ -361,13 +369,43 @@ h2 {
   background-color: #4e5f4c;
 }
 .carousel-3 {
-  background-color: #faaaa1;
+  background-color: #b7b466;
 }
 .carousel-4 {
-  background-color: #333c47;
+  background-color: #4e5f4c;
 }
 .carousel-5 {
-  background-color: #f08365;
+  background-color: #b7b466;
+}
+.carousel2-1 {
+  background-color: #feaba0;
+}
+.carousel2-2 {
+  background-color: #ff855c;
+}
+.carousel2-3 {
+  background-color: #feaba0;
+}
+.carousel2-4 {
+  background-color: #ff855c;
+}
+.carousel2-5 {
+  background-color: #feaba0;
+}
+.carousel3-1 {
+  background-color: #515a69;
+}
+.carousel3-2 {
+  background-color: #2f3846;
+}
+.carousel3-3 {
+  background-color: #515a69;
+}
+.carousel3-4 {
+  background-color: #2f3846;
+}
+.carousel3-5 {
+  background-color: #515a69;
 }
 .carousel-cell {
   /*height: 300px;*/
@@ -395,7 +433,7 @@ h2 {
   text-align: center;
 }
 .carousel-cell-column-image img {
-  width: 70%;
+  width: 80%;
 }
 
 #map-rmsp-tooltip {
@@ -903,7 +941,7 @@ tbody td {
 }
 
 .section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_1 {
-  background-color: #738085;
+  background-color: #eaeef1;
 }
 .section.map .map-layer-legend .map-toggle-icon-color.bg_prod_agua_2 {
   background-color: #c2d9eb;
@@ -1364,9 +1402,16 @@ span.tooltip {
 
 .title-sections {
   color: #f46d4f;
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   margin-top: 0;
 }
 img + span {
+  font-size: 0.8rem;
+}
+canvas + span {
+  font-size: 0.8rem;
+  position: absolute;
+}
+table + span {
   font-size: 0.8rem;
 }

@@ -79,7 +79,7 @@ const graph1Data = {
     pointHoverBorderColor: 'rgb(245, 132, 95)'
   }, {
     label: '2019',
-    data: [-22.7, -16.68319427, -4.4, -5.5, -0.02684536061],
+    data: [-22.7, -24.7, -4.4, -5.5, -0.02684536061],
     fill: false,
     tension: 0.25,
     backgroundColor: 'rgba(75, 95, 69, 0.2)',
@@ -123,7 +123,7 @@ const graph2Data = {
     pointHoverBorderColor: 'rgb(75, 95, 69)'
   }, {
     label: 'BAU',
-    data: [-20.83405803, -20.07071796, -5.5, -7.4, 0.4414316384],
+    data: [-20.83405803, -28.5, -5.5, -7.4, 0.4414316384],
     fill: false,
     tension: 0.25,
     backgroundColor: 'rgba(184, 183, 94, 0.2)',
@@ -134,7 +134,7 @@ const graph2Data = {
     pointHoverBorderColor: 'rgb(184, 183, 94)'
   }, {
     label: 'Cenário 1',
-    data: [-19.32431192, -20.60088725, -4.8, -5.5, 0.7740484121],
+    data: [-19.32431192, -28.8, -4.8, -5.5, 0.7740484121],
     fill: false,
     tension: 0.25,
     backgroundColor: 'rgba(47, 56, 70, 0.2)',
