@@ -321,7 +321,7 @@ h2 {
 }
 
 .background-alpha {
-  background-color: rgba(255, 255, 255, 0.60);
+  background-color: rgba(255, 255, 255, 0.30);
 }
 .bounce {
   animation: bounce 1.2s infinite;
@@ -354,13 +354,46 @@ h2 {
   color: #fff;
   /*height: 100%;*/
 }
-.main-carousel strong {
+.main-carousel strong.subtitle {
   font-size: 1.1rem;
 }
 .main-carousel h3 {
   font-size: 1.5rem;
   margin-top: 0;
   margin-top: 0;
+}
+.carousel-cell {
+  /*height: 300px;*/
+  /*height: 100%;*/
+  /*height: inherit;*/
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  min-height: 100%;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+}
+.carousel-cell-column {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 30px 0;
+}
+.carousel-cell-column:first-child {
+  padding-left: 3rem;
+  padding-right: 1.5rem;
+}
+.carousel-cell-column:last-child {
+  padding-right: 3rem;
+  padding-left: 1.5rem;
+}
+
+.carousel-cell-column-image {
+  text-align: center;
+}
+.carousel-cell-column-image img {
+/*.carousel-cell img {*/
+  width: 80%;
+  /*display: none;*/
 }
 .carousel-1 {
   background-color: #b7b466;
@@ -406,34 +439,6 @@ h2 {
 }
 .carousel3-5 {
   background-color: #515a69;
-}
-.carousel-cell {
-  /*height: 300px;*/
-  /*height: 100%;*/
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 0;
-}
-.carousel-cell-column {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 0;
-}
-.carousel-cell-column:first-child {
-  padding-left: 3rem;
-  padding-right: 1.5rem;
-}
-.carousel-cell-column:last-child {
-  padding-right: 3rem;
-  padding-left: 1.5rem;
-}
-
-.carousel-cell-column-image {
-  text-align: center;
-}
-.carousel-cell-column-image img {
-  width: 80%;
 }
 
 #map-rmsp-tooltip {
@@ -485,7 +490,10 @@ h2 {
   display: inline-block;
   font-size: 1rem;
 }
-
+#map-rmsp-tooltip .title {
+  font-weight: 600;
+  margin-left: 13px;
+}
 
 .gallery-widget {
 
@@ -557,7 +565,7 @@ h2 {
 
 header {
   color: #2c3240;
-  background-image: url('/static/images/background-cover2.jpg');
+  background-image: url('/static/images/background-cover.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -1200,6 +1208,8 @@ span.tooltip:hover::after {
   color: #fff;
   font-family: sans-serif;
   font-size: 0.8rem;
+  margin-left: -300px;
+  margin-top: 30px;
 }
 span.tooltip {
   text-decoration: underline;
@@ -1410,7 +1420,10 @@ img + span {
 }
 canvas + span {
   font-size: 0.8rem;
-  position: absolute;
+  /*position: absolute;*/
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 table + span {
   font-size: 0.8rem;

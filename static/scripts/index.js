@@ -199,8 +199,10 @@ Array.prototype.forEach.call(carouselElements, function (el) {
   var flkty = new Flickity(el, {
     // options
     cellAlign: 'left',
+    imagesLoaded: true,
+    // autoPlay: true,
     // adaptiveHeight: false,
-    // setGallerySize: false,
+    // setGallerySize: true,
     wrapAround: true,
     freeScroll: false,
     pageDots: false
