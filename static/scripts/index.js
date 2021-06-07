@@ -137,12 +137,12 @@ const graph2Data = {
     data: [-19.32431192, -28.7, -4.8, -5.5, 0.7740484121],
     fill: false,
     tension: 0.25,
-    backgroundColor: 'rgba(47, 56, 70, 0.2)',
-    borderColor: 'rgb(47, 56, 70)',
-    pointBackgroundColor: 'rgb(47, 56, 70)',
+    backgroundColor: 'rgba(254, 171, 160, 0.2)',
+    borderColor: 'rgb(254, 171, 160)',
+    pointBackgroundColor: 'rgb(254, 171, 160)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(47, 56, 70)'
+    pointHoverBorderColor: 'rgb(254, 171, 160)'
   }]
 };
 

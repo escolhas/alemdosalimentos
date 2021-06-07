@@ -817,10 +817,10 @@ tbody td {
   font-size: 1rem;
   list-style: none;
   margin: 1rem 0 0;
-  padding: 0;
+  /*padding: 0;*/
 }
 .section.map .map-definitions-container.sources ul {
-  color: #111;
+  color: #818285;
 }
 .section.map .map-definitions-container.sources li {
   margin: 0.2rem 0 0;
