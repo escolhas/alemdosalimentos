@@ -1428,3 +1428,7 @@ canvas + span {
 table + span {
   font-size: 0.8rem;
 }
+
+.canvas-title {
+  text-align: center;
+}
