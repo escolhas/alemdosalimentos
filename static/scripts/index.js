@@ -1,8 +1,6 @@
 mapboxgl.accessToken = // eslint-disable-line
   'pk.eyJ1IjoiaW5zdGl0dXRvZXNjb2xoYXMiLCJhIjoiY2twOHQ1ZjhrMGJpcTJxbWtqb3gwZHBsNSJ9.OZWZPYM3qCOgwbpwB_SYEQ';
 
-
-
 var mapLayers = {
   'map1-C1-AWY': ['C1-AWY'], // Produção de água
   'map1-C1-SDR': ['C1-SDR'], // Regulação da erosão
@@ -79,7 +77,7 @@ const graph1Data = {
     pointHoverBorderColor: 'rgb(245, 132, 95)'
   }, {
     label: '2019',
-    data: [-22.7, -24.7, -4.4, -5.5, -0.02684536061],
+    data: [-22.7, -24.7, -4.4, -5.5, -0.03],
     fill: false,
     tension: 0.25,
     backgroundColor: 'rgba(75, 95, 69, 0.2)',
@@ -112,7 +110,7 @@ const graph2Data = {
     pointHoverBorderColor: 'rgb(245, 132, 95)'
   }, {
     label: '2019',
-    data: [-22.7, -24.7, -4.4, -5.5, -0.02684536061],
+    data: [-22.7, -24.7, -4.4, -5.5, -0.03],
     fill: false,
     tension: 0.25,
     backgroundColor: 'rgba(75, 95, 69, 0.2)',
@@ -211,6 +209,24 @@ Array.prototype.forEach.call(carouselElements, function (el) {
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // span.tooltip events
+  let tooltipSpanElements = document.querySelectorAll('span.tooltip');
+  Array.prototype.forEach.call(tooltipSpanElements, function (el) {
+    el.addEventListener('mouseover', function (e) {
+      let content = document.createTextNode(el.getAttribute('alt'));
+      let div = document.createElement('div');
+      div.className = 'span-tooltip-widget';
+      div.appendChild(content);
+      document.body.appendChild(div);
+      div.style.top = (e.pageY + 20) + 'px';
+      div.style.left = (e.pageX - div.offsetWidth/2) + 'px';
+    });
+    el.addEventListener('mouseout', function (e) {
+      let toDelete = document.querySelector('.span-tooltip-widget');
+      toDelete.parentNode.removeChild(toDelete);
+    });
+  });
+
   // SVG tooltip
   var rmspSvg = document.querySelector('#map-rmsp-svg');
   rmspSvg.addEventListener("load",function(){
@@ -299,9 +315,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-
-
-
 
 });
 
