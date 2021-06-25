@@ -484,7 +484,7 @@ h2 {
   line-height: 1rem;
   vertical-align: middle;
 }
-#map-rmsp-tooltip li span {
+#map-rmsp-tooltip li span.arrow {
   width: 10px;
   text-align: center;
   display: inline-block;

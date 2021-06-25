@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?3080" />
+  <link rel="stylesheet" href="/static/css/style.css?20181" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -1204,14 +1204,14 @@ e florestais em urbanas.
   
 <div style="text-align: center;">
   <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
-<div id="map-rmsp-tooltip" tx-content="include">
-  <span class="title">Município</span>
+<div id="map-rmsp-tooltip">
+  <span class="title" tx-content="include">Município</span>
   <ul>
-    <li><span class="producao-agua"></span>&nbsp;Produção de água</li>
-    <li><span class="mitigacao-inundacao"></span>&nbsp;Mitigação inundações</li>
-    <li><span class="mitigacao-calor"></span>&nbsp;Mitigação calor</li>
-    <li><span class="regulacao-erosao"></span>&nbsp;Regulação erosão</li>
-    <li><span class="provisao-alimentos"></span>&nbsp;Provisão alimentos</li>
+    <li><span class="arrow producao-agua"></span>&nbsp;<span tx-content="include">Produção de água</span></li>
+    <li><span class="arrow mitigacao-inundacao"></span>&nbsp;<span tx-content="include">Mitigação inundações</span></li>
+    <li><span class="arrow mitigacao-calor"></span>&nbsp;<span tx-content="include">Mitigação calor</span></li>
+    <li><span class="arrow regulacao-erosao"></span>&nbsp;<span tx-content="include">Regulação erosão</span></li>
+    <li><span class="arrow provisao-alimentos"></span>&nbsp;<span tx-content="include">Provisão alimentos</span></li>
   </ul>
 </div>
 </div>
