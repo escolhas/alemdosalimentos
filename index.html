@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?7893" />
+  <link rel="stylesheet" href="/static/css/style.css?3080" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -66,6 +66,8 @@
       <li><a href="#hoje">Hoje</a></li>
       <li><a href="#amanha">Amanhã</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li class="nav-lang-sel-en"><a href="?lang=en">English</a></li>
+      <li class="nav-lang-sel-pt-br"><a href="?lang=pt_BR">Português</a></li>
     </ul>
   </nav>
 </div>
@@ -314,7 +316,9 @@ tais como o controle de erosão, o conforto térmico e o sequestro de carbono.
   
 <div style="text-align: center;">
 
-  <img src="/static/images/table-uso-solo2.svg" alt="Uso solo" style="width: 70%;">
+  <div tx-content="translate_urls">
+    <img src="/static/images/table-uso-solo2.svg" alt="Uso solo" style="width: 70%;">
+  </div>
 </div>
 
 </div>
@@ -1200,7 +1204,7 @@ e florestais em urbanas.
   
 <div style="text-align: center;">
   <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
-<div id="map-rmsp-tooltip">
+<div id="map-rmsp-tooltip" tx-content="include">
   <span class="title">Município</span>
   <ul>
     <li><span class="producao-agua"></span>&nbsp;Produção de água</li>
@@ -2125,7 +2129,12 @@ O botão <strong>outros usos do solo</strong> apresenta os dados do Mapbiomas (2
   gtag('config', 'UA-70346226-43');
 </script>
 
-<script type="text/javascript">window.liveSettings={api_key:"92d7fe2c91e94f6296445dfa9edfb314"}</script>
+<script type="text/javascript">
+  window.liveSettings={
+    api_key: "92d7fe2c91e94f6296445dfa9edfb314",
+    picker: "#language-picker"
+  }
+</script>
 <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
 
 </body>

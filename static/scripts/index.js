@@ -209,6 +209,24 @@ Array.prototype.forEach.call(carouselElements, function (el) {
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  Transifex.live.onTranslatePage(function(lang) {
+    if (lang === 'en') {
+      graphLabels = [
+        'Food supply',
+        'Water yield',
+        'Flood mitigation',
+        'Heat mitigation',
+        'Erosion regulation'
+      ]
+      graph1.data.labels = graphLabels;
+      graph2.data.labels = graphLabels;
+
+      graph1.update();
+      graph2.update();
+    }
+  });
+
+
   // span.tooltip events
   let tooltipSpanElements = document.querySelectorAll('span.tooltip');
   Array.prototype.forEach.call(tooltipSpanElements, function (el) {

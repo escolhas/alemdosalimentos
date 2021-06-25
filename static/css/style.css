@@ -1234,6 +1234,26 @@ span.tooltip {
 }
 */
 
+
+/* Language */
+#top-header .main-nav ul li.nav-lang-sel-en,
+#top-header .main-nav ul li.nav-lang-sel-pt-br {
+  display: none;
+}
+html[lang="en"] #top-header .main-nav ul li.nav-lang-sel-pt-br,
+html[lang="pt"] #top-header .main-nav ul li.nav-lang-sel-en {
+  display: inline;
+}
+/*
+html[lang="en"] .display-en,
+html[lang="pt"] .display-pt {
+  display: inline;
+}
+html[lang="en"] .display-pt,
+html[lang="pt"] .display-en {
+  display: none;
+}*/
+
 @media only screen and (max-width: 1023px) {
   .container.two-columns,
   .container.grid .line {
