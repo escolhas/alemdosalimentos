@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?20181" />
+  <link rel="stylesheet" href="/static/css/style.css?10369" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -109,7 +109,7 @@
             <a href="http://teebweb.org/" target="_blank">
               <img src="/static/images/logo-teeb.png" alt="TEEB">
             </a>
-            <a href="https://www.unep.org/" target="_blank">
+            <a href="https://www.unep.org/" target="_blank" tx-content="translate_urls">
               <img src="/static/images/logo-unep.png" alt="UN environment programme">
             </a>
           </div>
@@ -554,7 +554,7 @@ manutenção de serviços ecossistêmicos na metrópole de São Paulo?
 
 
   
-<p>
+<p tx-content="translate_urls">
 Como desdobramento do estudo <a href="https://www.escolhas.org/wp-content/uploads/2021/01/Sum%C3%A1rio-Executivo-Mais-perto-do-que-se-imagina-a-produ%C3%A7%C3%A3o-de-alimentos-na-metr%C3%B3pole-de-S%C3%A3o-Paulo.pdf" target="_blank" class="strong-a">“Mais perto do que se imagina: a produção de alimentos na metrópole de São Paulo”</a>, o Escolhas em parceria com a Iniciativa “A Economia dos Ecossistemas e da Biodiversidade para Agricultura e Alimentação”, conhecida como TEEBAgriFood (sigla em inglês) do Programa das Nações Unidas para o Meio Ambiente (PNUMA), investigou outros 
 benefícios da produção agrícola na metrópole.
 </p>
@@ -1203,7 +1203,9 @@ e florestais em urbanas.
 
   
 <div style="text-align: center;">
-  <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
+  <div tx-content="translate_urls">
+    <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
+  </div>
 <div id="map-rmsp-tooltip">
   <span class="title" tx-content="include">Município</span>
   <ul>
