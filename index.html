@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?44163" />
+  <link rel="stylesheet" href="/static/css/style.css?34749" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -59,6 +59,7 @@
   <a href="https://www.escolhas.org" target="_blank" class="logo-link">
     <img src="/static/images/logo-escolhas-preto.svg" alt="Instituto Escolhas" class="logo" />
   </a>
+  <div class="nav-container">
   <nav class="main-nav">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -66,10 +67,15 @@
       <li><a href="#hoje">Hoje</a></li>
       <li><a href="#amanha">Amanhã</a></li>
       <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+  <nav class="lang-nav">
+    <ul>
       <li class="nav-lang-sel-en"><a href="?lang=en">English</a></li>
       <li class="nav-lang-sel-pt-br"><a href="?lang=pt_BR">Português</a></li>
     </ul>
   </nav>
+  </div>
 </div>
 
 <header id="home">
@@ -1204,7 +1210,7 @@ e florestais em urbanas.
   
 <div style="text-align: center;">
   <div tx-content="translate_urls">
-    <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;">Mapa</object>
+    <object id="map-rmsp-svg" type="image/svg+xml" data="/static/images/map-rmsp.svg" style="width: 70%;"></object>
   </div>
 <div id="map-rmsp-tooltip">
   <span class="title" tx-content="include">Município</span>
@@ -2100,7 +2106,7 @@ O botão <strong>outros usos do solo</strong> apresenta os dados do Mapbiomas (2
             <a href="http://teebweb.org/" target="_blank">
               <img src="/static/images/logo-teeb.png" alt="TEEB">
             </a>
-            <a href="https://www.unep.org/" target="_blank">
+            <a href="https://www.unep.org/" target="_blank" tx-content="translate_urls">
               <img src="/static/images/logo-unep.png" alt="UN environment programme">
             </a>
           </div>
@@ -2134,7 +2140,6 @@ O botão <strong>outros usos do solo</strong> apresenta os dados do Mapbiomas (2
 <script type="text/javascript">
   window.liveSettings={
     api_key: "92d7fe2c91e94f6296445dfa9edfb314",
-    enable_tags: ['object'],
     picker: "#language-picker"
   }
 </script>
