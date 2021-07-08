@@ -463,7 +463,11 @@ h2 {
 .carousel3-5 {
   background-color: #515a69;
 }
-
+.map-rmsp-legend {
+  width: 100%;
+  display: block;
+  text-align: right;
+}
 #map-rmsp-tooltip {
   left: -100000px;
   text-align: left;
