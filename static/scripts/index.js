@@ -207,27 +207,8 @@ Array.prototype.forEach.call(carouselElements, function (el) {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-
-  Transifex.live.onTranslatePage(function(lang) {
-    if (lang === 'en') {
-      graphLabels = [
-        'Food supply',
-        'Water yield',
-        'Flood mitigation',
-        'Heat mitigation',
-        'Erosion regulation'
-      ]
-      graph1.data.labels = graphLabels;
-      graph2.data.labels = graphLabels;
-
-      graph1.update();
-      graph2.update();
-    }
-  });
-
-
-  // span.tooltip events
+// span.tooltip events
+function setTooltipEvents() {
   let tooltipSpanElements = document.querySelectorAll('span.tooltip');
   Array.prototype.forEach.call(tooltipSpanElements, function (el) {
     el.addEventListener('mouseover', function (e) {
@@ -243,6 +224,31 @@ document.addEventListener('DOMContentLoaded', function () {
       let toDelete = document.querySelector('.span-tooltip-widget');
       toDelete.parentNode.removeChild(toDelete);
     });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  setTooltipEvents();
+
+  Transifex.live.onTranslatePage(function(lang) {
+
+    setTooltipEvents();
+
+    if (lang === 'en') {
+      graphLabels = [
+        'Food supply',
+        'Water yield',
+        'Flood mitigation',
+        'Heat mitigation',
+        'Erosion regulation'
+      ]
+      graph1.data.labels = graphLabels;
+      graph2.data.labels = graphLabels;
+
+      graph1.update();
+      graph2.update();
+    }
   });
 
   // SVG tooltip
