@@ -1289,6 +1289,14 @@ html[lang="pt"] .display-en {
 }
 
 @media only screen and (max-width : 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  header .content-child {
+    font-size: 0.9rem;
+  }
+
   @media (orientation: portrait) {
     body {
       overflow: hidden;
