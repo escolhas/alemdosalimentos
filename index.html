@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?9747" />
+  <link rel="stylesheet" href="/static/css/style.css?2259" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -2139,9 +2139,13 @@ O botão <strong>outros usos do solo</strong> apresenta os dados do Mapbiomas (2
 </script>
 
 <script type="text/javascript">
-  window.liveSettings={
+  window.liveSettings = {
     api_key: "92d7fe2c91e94f6296445dfa9edfb314",
-    picker: "#language-picker"
+    picker: "#language-picker",
+    detectLang: function() {
+      //return language code
+      return 'pt_BR';
+    }
   }
 </script>
 <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
