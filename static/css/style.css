@@ -1268,7 +1268,9 @@ span.tooltip {
   display: none;
 }
 html[lang="en"] #top-header .lang-nav ul li.nav-lang-sel-pt-br,
-html[lang="pt"] #top-header .lang-nav ul li.nav-lang-sel-en {
+html[lang="pt_br"] #top-header .lang-nav ul li.nav-lang-sel-en,
+html[lang="pt"] #top-header .lang-nav ul li.nav-lang-sel-en,
+html[lang="pt-br"] #top-header .lang-nav ul li.nav-lang-sel-en {
   display: inline;
 }
 /*

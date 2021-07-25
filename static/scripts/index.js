@@ -231,6 +231,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setTooltipEvents();
 
+  var changeLangElements = document.querySelectorAll('.change-lang');
+  Array.prototype.forEach.call(changeLangElements, function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      Transifex.live.translateTo(el.getAttribute('lang'), true);
+    });
+  });
+
+
   Transifex.live.onTranslatePage(function(lang) {
 
     setTooltipEvents();

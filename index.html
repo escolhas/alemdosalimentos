@@ -46,7 +46,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="/static/css/normalize.css" />
-  <link rel="stylesheet" href="/static/css/style.css?2259" />
+  <link rel="stylesheet" href="/static/css/style.css?27130" />
 </head>
 <body>
 <div class="rotate-screen">
@@ -71,8 +71,8 @@
   </nav>
   <nav class="lang-nav">
     <ul>
-      <li class="nav-lang-sel-en"><a href="?lang=en">English</a></li>
-      <li class="nav-lang-sel-pt-br"><a href="?lang=pt_BR">Português</a></li>
+      <li class="nav-lang-sel-en"><a class="change-lang" lang="en" href="#en">English</a></li>
+      <li class="nav-lang-sel-pt-br"><a class="change-lang" lang="pt_BR" href="#pt_BR">Português</a></li>
     </ul>
   </nav>
   </div>
@@ -2141,11 +2141,8 @@ O botão <strong>outros usos do solo</strong> apresenta os dados do Mapbiomas (2
 <script type="text/javascript">
   window.liveSettings = {
     api_key: "92d7fe2c91e94f6296445dfa9edfb314",
-    picker: "#language-picker",
-    detectLang: function() {
-      //return language code
-      return 'pt_BR';
-    }
+    detectlang: false,
+    picker: "#language-picker"
   }
 </script>
 <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
